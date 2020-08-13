@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/2006NodeDev/Project-3-userservice#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
     "express-session": "^1.17.1"
   },

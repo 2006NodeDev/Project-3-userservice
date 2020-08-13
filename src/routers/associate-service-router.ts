@@ -1,13 +1,15 @@
-import { express } from 'express'
+//import { express, NextFunction } from 'express'
+// import { getAllAssociatesInBatchService } from '../services/associate-service'
 
-export const associateRouter = express.Router()
+// export const associateRouter = express.Router()
 
-associateRouter.get('/', async (req: Request, res: Response, next: NextFunction) => {
+// associateRouter.get('/batch/:id', async (req: Request, res: Response, next: NextFunction) => {
+//     let {id} = req.params;
 
-    try {
-        let allAssociatesInBatch = await getAllAssociatesInBatchService()
-        res.json(allAssociatesInBatch)
-    } catch (express) {
-        next(express)
-    }
-})
+//     try {
+//         let allAssociatesInBatch = await getAllAssociatesInBatchService(id)
+//         res.json(allAssociatesInBatch)
+//     } catch (express) {
+//         next(express)
+//     }
+// })
