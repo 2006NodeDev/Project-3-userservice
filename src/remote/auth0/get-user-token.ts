@@ -1,5 +1,6 @@
 import { auth0BaseClient } from ".";
-
+import { logger, errorLogger } from "../../util/loggers";
+require('dotenv').config()
 /*
  * This function gets the Auth0 User Token.
  * The request body contains the specific properties of
@@ -19,16 +20,13 @@ export async function auth0GetUserToken(username:string, password:string) {
             password
         }
         let res = await auth0BaseClient.post('/oauth/token', body)
-        console.log(res.data.access_token);
-        //logger.debug(res.data.access_token)
+        logger.debug(res.data.access_token)
         return res.data.access_token
         
     } catch (e) {
-        console.log(e);
-        console.log(e.status);
-        //logger.debug(e)
-        //errorLogger.error(e)
-        //logger.info(e.status)
+        logger.debug(e)
+        errorLogger.error(e)
+        logger.info(e.status)
         let error:any = new Error(e.message) //could be custom error
         error.status = e.status
         throw error
