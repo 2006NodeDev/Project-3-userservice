@@ -16,7 +16,6 @@ associateRouter.get('/:batchId', async (req:Request, res:Response, next:NextFunc
         next(e)
     }
 })
-
 associateRouter.get('/', async (req:Request, res:Response, next:NextFunction) => {
     let {batchId} = req.params;
     try{
@@ -26,6 +25,17 @@ associateRouter.get('/', async (req:Request, res:Response, next:NextFunction) =>
         next(e)
     }
 })
+//getBatchIdsByTrainer
+//As a Trainer, I should be able to view the profiles of all 
+//Associates across all my batches so that I can best accommodate
+//the preferences of my Associates. 
+associateRouter.get('',async (req:Request, res:Response, next:NextFunction) =>{
+
+
+
+})
+
+
 
 // app.get('/', async ()=>{
 //     let apiData = await getAssociatesByBatchId("TR-1077")
