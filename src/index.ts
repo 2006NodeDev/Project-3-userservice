@@ -13,6 +13,7 @@ app.use(express.json())
 // })
 
 app.use('/associates', associateRouter);
+console.log("HELLOOOOO we hit the associate router")
 app.use('/batch', batchRouter);
 
 app.listen(2006, () =>{
