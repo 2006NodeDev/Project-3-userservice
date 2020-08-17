@@ -30,8 +30,12 @@ batchRouter.get('/:trainerEmail/ids', async (req:Request, res:Response, next:Nex
 })
 
 batchRouter.get('/current', async (req:Request, res:Response, next:NextFunction) => {
+    console.log("HELLOOOOO")
+
     try{
         let user = await getCurrentBatches()
+        var obj = JSON.parse(user);
+        console.log(obj)
         res.json(user)
     } catch (e){
         next(e)
@@ -39,6 +43,7 @@ batchRouter.get('/current', async (req:Request, res:Response, next:NextFunction)
 })
 
 batchRouter.get('/skills', async (req:Request, res:Response, next:NextFunction) => {
+
     try{
         let user = await getBatchBySkills()
         res.json(user)
