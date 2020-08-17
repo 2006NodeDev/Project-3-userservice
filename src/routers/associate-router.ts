@@ -19,26 +19,41 @@ export let associateRouter = express.Router()
 // })
 
 associateRouter.get('/', async (req:Request, res:Response, next:NextFunction) => {
-    console.log("send help")
     try{
         let user = await getAllAssociates()
-
         res.json(user)
+        console.log("return length = " + user.length)
+        console.log(user[0].email)
+
     } catch (e){
         next(e)
     }
 })
 
 associateRouter.get('/test', async (req:Request, res:Response, next:NextFunction) => {
-    console.log("HELLOOOOO")
     try{
-        let user = await getCurrentBatches()
-        console.log(res.json(user))
+        let user = await getAllAssociates()
+        res.json(user)
+        console.log("successful test assoc")
         // var obj = JSON.parse(user);
         // console.log(obj)
        
         
     } catch (e){
+        next(e)
+    }
+})
+
+
+associateRouter.get('/currents', async (req: Request, res: Response, next: NextFunction) => {
+    console.log("we hit the batch router!")
+    try {
+        let batch = await getCurrentBatches()
+        res.json(batch)
+        console.log(batch)
+
+    } catch (e) {
+        console.log(e)
         next(e)
     }
 })
