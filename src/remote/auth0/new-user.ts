@@ -1,11 +1,8 @@
 import { auth0BaseClient } from "."
 import { logger, errorLogger } from "../../util/loggers"
-import e from "express"
 
 
-
-
-export async function auth0CreateNewUser(newUser: User , password: string){
+export async function auth0CreateNewUser(newUser:User , password: string){
     try {
         let body = {
             email: newUser.email,
