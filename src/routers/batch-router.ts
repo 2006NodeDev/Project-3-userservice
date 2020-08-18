@@ -1,3 +1,7 @@
+//COMMENTED OUT CODE WHILE WE SOLVE ISSUE WITH BATCHROUTER
+
+
+/*
 import express, { Request, Response, NextFunction } from 'express'
 import { getBatchByBatchId } from '../remote/caliber-api/get-batch-by-batch-id';
 import { getBatchIdByTrainer } from '../remote/caliber-api/get-batch-id-by-trainer';
@@ -60,3 +64,6 @@ batchRouter.get('/skillSet', async (req: Request, res: Response, next: NextFunct
         next(e)
     }
 })
+
+
+*/
