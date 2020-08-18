@@ -5,7 +5,7 @@ import { getCurrentBatches } from "../get-current-batches"
 import { getAllBatches } from "../get-all-batches"
 import { getBatchBySkill } from "./get-batch-by-skill"
 import { Batch } from "../../../models/Batch"
-import { getAssocInSkillBatch } from "./get-associates-in-batch"
+import { getAssocInBatch } from "./get-associates-in-batch"
 
 export const getAssocBySkill = async (skill:string) => {
     try{
@@ -13,7 +13,7 @@ export const getAssocBySkill = async (skill:string) => {
         
         let skillBatches = await getBatchBySkill(allBatches, skill)
 
-        let assocInSkillBatches = await getAssocInSkillBatch(skillBatches)
+        let assocInSkillBatches = await getAssocInBatch(skillBatches)
 
         return assocInSkillBatches
 
