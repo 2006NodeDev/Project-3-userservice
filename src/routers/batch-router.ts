@@ -31,23 +31,25 @@ batchRouter.get('/:trainerEmail/ids', async (req: Request, res: Response, next: 
     }
 })
 
-console.log("we're here!")
 //gets list of currently active batches w/ details
-batchRouter.get('/currents', async (req: Request, res: Response, next: NextFunction) => {
+batchRouter.get('/currentBatches', async (req: Request, res: Response, next: NextFunction) => {
     console.log("we hit the batch router!")
     try {
         let batch = await getCurrentBatches()
         res.json(batch)
-        console.log(batch)
 
     } catch (e) {
-        console.log(e)
-        next(e)
+        console.log("error in batchRouter get request")
+        //console.log(e)
+        //next(e)
     }
 })
 
+
+
+
 //gets the list of skills being taught by currently active batches
-batchRouter.get('/skills', async (req: Request, res: Response, next: NextFunction) => {
+batchRouter.get('/skillSet', async (req: Request, res: Response, next: NextFunction) => {
 
     try {
         let user = await getBatchBySkills()

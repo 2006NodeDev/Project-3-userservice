@@ -7,7 +7,7 @@ export const getCurrentBatches = async () => {
         let res = await caliberBaseClient.get(`/mock/training/batch/current`)
         return res.data
     }catch(e){
-        console.log(e);
+        console.log("error in getCurrentBatches function")
         throw (e)
 
     }

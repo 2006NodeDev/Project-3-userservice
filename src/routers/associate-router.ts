@@ -2,6 +2,8 @@ import express, { Request, Response, NextFunction} from 'express'
 import { getAssociatesByBatchId } from '../remote/caliber-api/get-associates-by-batch-id';
 import { getAllAssociates } from '../remote/caliber-api/get-all-associates';
 import { getCurrentBatches } from '../remote/caliber-api/get-current-batches';
+import { getAssociateswithFilter } from '../remote/caliber-api/get-associates-filter-skill';
+import { authorizationMiddleware } from '../middleware/authorization';
 
 export let associateRouter = express.Router()
 
@@ -48,7 +50,22 @@ associateRouter.get('/currents', async (req: Request, res: Response, next: NextF
     try {
         let batch = await getCurrentBatches()
         res.json(batch)
-        console.log(batch)
+
+    } catch (e) {
+        console.log(e)
+        next(e)
+    }
+})
+
+
+associateRouter.get('/:skill', authorizationMiddleware(["Admin"], true), async (req: Request, res: Response, next: NextFunction) => {
+    const {skill} = req.params
+
+
+
+    try {
+        let batch = await getAssociateswithFilter(skill)
+        res.json(batch)
 
     } catch (e) {
         console.log(e)
