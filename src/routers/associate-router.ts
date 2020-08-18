@@ -7,7 +7,7 @@ import { authorizationMiddleware } from '../middleware/authorization';
 import { getSkillsList } from '../remote/caliber-api/get-skills-list';
 import { getBatchIdByTrainer } from '../remote/caliber-api/get-batch-id-by-trainer';
 import { getBatchByBatchId } from '../remote/caliber-api/get-batch-by-batch-id';
-import { getAssociateswithYear } from '../remote/caliber-api/associateFilter/get-associate-filter-year';
+import { getAssociatesWithYear } from '../remote/caliber-api/associateFilter/get-associate-filter-year';
 import { getAssociateswithQuarter } from '../remote/caliber-api/associateFilter/get-associate-filter-quarter';
 import { getAssocBySkill } from '../remote/caliber-api/associateFilter/get-associates-filter-skill';
 
@@ -73,27 +73,26 @@ associateRouter.get('/currentBatches', async (req: Request, res: Response, next:
 
 associateRouter.get('/skill/:skillname', async (req: Request, res: Response, next: NextFunction) => {
     let  skillName = req.params.skillname
-
-
     try {
-
-        let assocBySkill = getAssocBySkill(skillName)
-
-
-        // let filtered_assoc = await getAssociateswithFilter(skill)
-        // res.json(filtered_assoc)
-
+        let assocBySkill = await getAssocBySkill(skillName)
+        res.json(assocBySkill)
     } catch (e) {
         console.log(e)
         next(e)
     }
 })
 
-// app.get('/', async ()=>{
-//     let apiData = await getAssociatesByBatchId("TR-1077")
-//     console.log(apiData)
-// })
-
+associateRouter.get('/year/:yearValue', async (req: Request, res: Response, next: NextFunction) => {
+    let  year = req.params.yearValue
+    try {
+        let assocByYear = await getAssociatesWithYear(year)
+        console.log(assocByYear)
+        res.json(assocByYear)
+    } catch (e) {
+        console.log(e)
+        next(e)
+    }
+})
 
 
 associateRouter.get('/:trainerEmail/ids', async (req: Request, res: Response, next: NextFunction) => {
