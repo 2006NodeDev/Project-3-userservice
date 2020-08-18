@@ -2,10 +2,11 @@ import express, { Request, Response, NextFunction} from 'express'
 import { getAssociatesByBatchId } from '../remote/caliber-api/get-associates-by-batch-id';
 import { getAllAssociates } from '../remote/caliber-api/get-all-associates';
 import { getCurrentBatches } from '../remote/caliber-api/get-current-batches';
-import { getAssociateswithFilter } from '../remote/caliber-api/get-associates-filter-skill';
+// import { getAssociateswithFilter } from '../remote/caliber-api/get-associates-filter-skill';
 import { authorizationMiddleware } from '../middleware/authorization';
 
 export let associateRouter = express.Router()
+export let batchRouter = express.Router()
 
 // auth middleware goes here
 // associatesRouter.use(authenticationMiddleware);
@@ -45,7 +46,7 @@ associateRouter.get('/test', async (req:Request, res:Response, next:NextFunction
 })
 
 
-associateRouter.get('/currents', async (req: Request, res: Response, next: NextFunction) => {
+associateRouter.get('/currentBatches', async (req: Request, res: Response, next: NextFunction) => {
     console.log("we hit the batch router!")
     try {
         let batch = await getCurrentBatches()
@@ -58,20 +59,21 @@ associateRouter.get('/currents', async (req: Request, res: Response, next: NextF
 })
 
 
-associateRouter.get('/:skill', authorizationMiddleware(["Admin"], true), async (req: Request, res: Response, next: NextFunction) => {
-    const {skill} = req.params
+
+// associateRouter.get('/:skill', authorizationMiddleware(["Admin"], true), async (req: Request, res: Response, next: NextFunction) => {
+//     const {skill} = req.params
 
 
 
-    try {
-        let batch = await getAssociateswithFilter(skill)
-        res.json(batch)
+//     try {
+//         let batch = await getAssociateswithFilter(skill)
+//         res.json(batch)
 
-    } catch (e) {
-        console.log(e)
-        next(e)
-    }
-})
+//     } catch (e) {
+//         console.log(e)
+//         next(e)
+//     }
+// })
 
 // app.get('/', async ()=>{
 //     let apiData = await getAssociatesByBatchId("TR-1077")
