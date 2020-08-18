@@ -14,7 +14,7 @@ export let batchRouter = express.Router()
 // auth middleware goes here
 // associatesRouter.use(authenticationMiddleware);
 
-// associateRouter.get('/:batchId', async (req:Request, res:Response, next:NextFunction) => {
+// associateRouter.get('/batches/:batchId', async (req:Request, res:Response, next:NextFunction) => {
 //     let {batchId} = req.params;
 //     try{
 //         let user = await getAssociatesByBatchId(batchId)
@@ -36,21 +36,18 @@ associateRouter.get('/', async (req:Request, res:Response, next:NextFunction) =>
     }
 })
 
-associateRouter.get('/test', async (req:Request, res:Response, next:NextFunction) => {
+
+// get associates by batch id
+associateRouter.get('/:batchId', async (req:Request, res:Response, next:NextFunction) => {
+    let {batchId} = req.params;
     try{
-        let user = await getAllAssociates()
+        let user = await getAssociatesByBatchId(batchId)
         res.json(user)
-        console.log("successful test assoc")
-       
-        
+
     } catch (e){
         next(e)
     }
 })
-//getBatchIdsByTrainer
-//As a Trainer, I should be able to view the profiles of all 
-//Associates across all my batches so that I can best accommodate
-//the preferences of my Associates. 
 
 
 associateRouter.get('/currentBatches', async (req: Request, res: Response, next: NextFunction) => {
@@ -65,29 +62,7 @@ associateRouter.get('/currentBatches', async (req: Request, res: Response, next:
     }
 })
 
-
-
-// associateRouter.get('/:skill', authorizationMiddleware(["Admin"], true), async (req: Request, res: Response, next: NextFunction) => {
-//     const {skill} = req.params
-
-
-
-//     try {
-//         let batch = await getAssociateswithFilter(skill)
-//         res.json(batch)
-
-//     } catch (e) {
-//         console.log(e)
-//         next(e)
-//     }
-// })
-
-// app.get('/', async ()=>{
-//     let apiData = await getAssociatesByBatchId("TR-1077")
-//     console.log(apiData)
-// })
-
-associateRouter.get('/:batchId', async (req: Request, res: Response, next: NextFunction) => {
+associateRouter.get('/batches/:batchId', async (req: Request, res: Response, next: NextFunction) => {
     let { batchId } = req.params;
     try {
         let user = await getBatchByBatchId(batchId)
@@ -122,8 +97,7 @@ associateRouter.get('/currentBatches', async (req: Request, res: Response, next:
 })
 
 //gets the list of skills being taught by currently active batches
-associateRouter.get('/skillSet', async (req: Request, res: Response, next: NextFunction) => {
-
+associateRouter.get('/batch/skills', async (req: Request, res: Response, next: NextFunction) => {
     try {
         let user = await getBatchBySkills()
         res.json(user)
