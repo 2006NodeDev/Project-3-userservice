@@ -6,10 +6,6 @@ const app = express()
 
 app.use(express.json())
 
-// app.get('/', async ()=>{
-//     let apiData = await getAssociatesByBatchId("TR-1077")
-//     console.log(apiData)
-// })
 // app.use('/batches', batchRouter);
 app.use('/associates', associateRouter);
 

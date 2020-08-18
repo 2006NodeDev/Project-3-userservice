@@ -1,7 +1,7 @@
-import { getAllAssociates } from "./get-all-associates"
-import { Associate } from "../../models/Associate"
+import { getAllAssociates } from "../get-all-associates"
+import { Associate } from "../../../models/Associate"
 
-export const getAssociateswithQuarter = async () => {
+export const getAssociateswithYear = async () => {
     try{
         let allAssoc= await getAllAssociates()
 
