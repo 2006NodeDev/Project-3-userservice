@@ -1,10 +1,14 @@
 import express from 'express'
 import { associateRouter } from './routers/associate-router';
+import { corsFilter } from './middleware/cors-filter';
 // import { batchRouter } from './routers/batch-router';
 
 const app = express()
 
 app.use(express.json())
+
+app.use(corsFilter)
+
 
 // app.use('/batches', batchRouter);
 app.use('/associates', associateRouter);
