@@ -6,10 +6,7 @@ export const getAssocInSkillBatch = async (skillBatch:Batch[])=>{
 
     for (var i in skillBatch){
         for(var j in skillBatch[i].associateAssignments)
-        
             assocArrayinSkillBatch.push(skillBatch[i].associateAssignments[j].associate)
-
-
     }
 
     // console.log(assocArrayinSkillBatch)
