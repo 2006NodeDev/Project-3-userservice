@@ -1,10 +1,13 @@
 import express from 'express'
 import { associateRouter } from './routers/associate-router';
 import { batchRouter } from './routers/batch-router';
+import { corsFilter } from './middleware/cors-filter';
 
 const app = express()
 
 app.use(express.json())
+
+app.use(corsFilter)
 
 // app.get('/', async ()=>{
 //     let apiData = await getAssociatesByBatchId("TR-1077")
