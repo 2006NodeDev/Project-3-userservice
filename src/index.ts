@@ -1,7 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express'
 import { auth0GetUserServiceToken } from './remote/auth0/get-user-service-token'
 import { auth0UpdatePassword } from './remote/auth0/patch-password'
-import { logger } from './util/loggers';
+import { logger, errorLogger } from './util/loggers';
 
 const app = express()
 
@@ -18,6 +18,7 @@ app.patch('/updatePassword', (req:Request, res:Response, next:NextFunction) => {
         logger.error(error);
     }
 })
+
 
 app.listen(2006, () =>{
     auth0GetUserServiceToken()
