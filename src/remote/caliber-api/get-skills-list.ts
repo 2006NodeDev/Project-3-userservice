@@ -1,6 +1,6 @@
 import {caliberBaseClient} from '.'
 
-export const getBatchBySkills = async () => {
+export const getSkillsList = async () => {
     try{
         let res = await caliberBaseClient.get(`/mock/training/batch/skills`)
         return res.data

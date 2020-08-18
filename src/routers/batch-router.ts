@@ -1,3 +1,7 @@
+//COMMENTED OUT CODE WHILE WE SOLVE ISSUE WITH BATCHROUTER
+
+
+/*
 import express, { Request, Response, NextFunction } from 'express'
 import { getBatchByBatchId } from '../remote/caliber-api/get-batch-by-batch-id';
 import { getBatchIdByTrainer } from '../remote/caliber-api/get-batch-id-by-trainer';
@@ -31,22 +35,27 @@ batchRouter.get('/:trainerEmail/ids', async (req: Request, res: Response, next: 
     }
 })
 
+console.log("hi this is the batch router")
+
 //gets list of currently active batches w/ details
-batchRouter.get('/currents', async (req: Request, res: Response, next: NextFunction) => {
+batchRouter.get('/currentBatches', async (req: Request, res: Response, next: NextFunction) => {
     console.log("we hit the batch router!")
     try {
         let batch = await getCurrentBatches()
         res.json(batch)
-        console.log(batch)
 
     } catch (e) {
-        console.log(e)
-        next(e)
+        console.log("error in batchRouter get request")
+        //console.log(e)
+        //next(e)
     }
 })
 
+
+
+
 //gets the list of skills being taught by currently active batches
-batchRouter.get('/skills', async (req: Request, res: Response, next: NextFunction) => {
+batchRouter.get('/skillSet', async (req: Request, res: Response, next: NextFunction) => {
 
     try {
         let user = await getBatchBySkills()
@@ -55,3 +64,6 @@ batchRouter.get('/skills', async (req: Request, res: Response, next: NextFunctio
         next(e)
     }
 })
+
+
+*/
