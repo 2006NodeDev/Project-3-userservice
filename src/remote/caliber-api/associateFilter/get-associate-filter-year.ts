@@ -1,7 +1,6 @@
 import { getAllAssociates } from "../get-all-associates"
 import { Associate } from "../../../models/Associate"
 import { getAllBatches } from "../get-all-batches"
-import { connectLogger } from "log4js"
 import { getBatchByYear } from "./get-batch-by-year"
 import { getAssocInYearBatch } from "./get-associates-in-year-batch"
 
