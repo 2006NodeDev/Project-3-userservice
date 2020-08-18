@@ -35,8 +35,6 @@ associateRouter.get('/test', async (req:Request, res:Response, next:NextFunction
         let user = await getAllAssociates()
         res.json(user)
         console.log("successful test assoc")
-        // var obj = JSON.parse(user);
-        // console.log(obj)
        
         
     } catch (e){

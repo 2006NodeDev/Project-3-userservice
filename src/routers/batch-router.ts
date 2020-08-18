@@ -31,6 +31,7 @@ batchRouter.get('/:trainerEmail/ids', async (req: Request, res: Response, next: 
     }
 })
 
+console.log("we're here!")
 //gets list of currently active batches w/ details
 batchRouter.get('/currents', async (req: Request, res: Response, next: NextFunction) => {
     console.log("we hit the batch router!")
