@@ -1,14 +1,9 @@
 import express, { Request, Response, NextFunction } from 'express'
 import { auth0GetUserServiceToken } from './remote/auth0/get-user-service-token'
 import { auth0UpdatePassword } from './remote/auth0/patch-password'
-
 import { logger, errorLogger } from './util/loggers';
-
 import { auth0Login } from './remote/auth0/login';
-
 import { auth0UpdateRole } from './remote/auth0/patch-role';
-
-
 const app = express()
 
 app.use(express.json())
@@ -43,7 +38,6 @@ app.patch('/updatePassword', (req:Request, res:Response, next:NextFunction) => {
     }
 })
 
-
 app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
     let { userId, role } = req.body;
     try {
@@ -53,7 +47,6 @@ app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
         logger.error(error);
     }
 })
-
 
 app.listen(2006, () =>{
     auth0GetUserServiceToken()
