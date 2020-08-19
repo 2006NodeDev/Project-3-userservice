@@ -1,5 +1,5 @@
-import { getAllAssociates } from "../get-all-associates"
-import { Associate } from "../../../models/Associate"
+import { Associate } from "../../models/Associate"
+import { getAllAssociates } from "../associate/get-all-associates"
 
 export const getAssociateswithQuarter = async () => {
     try{

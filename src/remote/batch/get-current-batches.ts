@@ -1,4 +1,4 @@
-import {caliberBaseClient} from '.'
+import {caliberBaseClient} from '..'
 
 export const getCurrentBatches = async () => {
     console.log("we are in  get Current Batches function")

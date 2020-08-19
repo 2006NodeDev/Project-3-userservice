@@ -1,5 +1,5 @@
-import { Associate } from "../../../models/Associate"
-import { Batch } from "../../../models/Batch"
+import { Associate } from "../../models/Associate"
+import { Batch } from "../../models/Batch"
 
 export const getBatchByYear = async (allBatches:Batch[], year:string)=>{
     let res:Batch[] = []

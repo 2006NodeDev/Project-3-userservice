@@ -1,6 +1,6 @@
-import { Associate } from "../../../models/Associate"
-import { Batch } from "../../../models/Batch"
-import { getBatchByBatchId } from "../get-batch-by-batch-id"
+import { Associate } from "../../models/Associate"
+import { Batch } from "../../models/Batch"
+import { getBatchByBatchId } from "./get-batch-by-batch-id"
 
 export const getBatch = async (allBatchIds:string[])=>{
     let res:Batch[] = []
