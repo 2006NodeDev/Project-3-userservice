@@ -1,5 +1,5 @@
-import { Associate } from "../../../models/Associate"
-import { Batch } from "../../../models/Batch"
+import { Associate } from "../../models/Associate"
+import { Batch } from "../../models/Batch"
 
 export const getBatchBySkill = async (allBatches:Batch[], skill:string)=>{
     let res:Batch[] = []
