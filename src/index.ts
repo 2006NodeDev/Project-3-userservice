@@ -5,14 +5,19 @@ import { logger } from './util/loggers';
 import { auth0UpdateRole } from './remote/auth0/patch-role';
 import { auth0CreateNewUser, User } from './remote/auth0/new-user';
 import { auth0Login } from './remote/auth0/login';
+import { checkJwt } from './middleware/jwt-verification';
 import swaggerUi from 'swagger-ui-express';
 import * as swaggerDocument from './swagger.json';
+import jwtAuthz from 'express-jwt-authz';
 
 const app = express()
 
 app.use(express.json())
 
 // const basePath = process.env['AC_BASE_PATH'] || ''
+
+//For a route that needs authentication: include 'checkJwt' in the path
+//For a route that needs permissions(scopes): include 'checkJwt, jwtAuthz([ 'read:messages' ])' to the path, similar to the roles array we used before
 
 app.post('/login', async (req:Request, res:Response, next:NextFunction) => {
     let { username } = req.body
