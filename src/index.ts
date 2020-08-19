@@ -1,7 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express'
 import { auth0GetUserServiceToken } from './remote/auth0/get-user-service-token'
 import { auth0UpdatePassword } from './remote/auth0/patch-password'
-import { logger, errorLogger } from './util/loggers';
+import { logger } from './util/loggers';
 import { auth0UpdateRole } from './remote/auth0/patch-role';
 import { auth0CreateNewUser, User } from './remote/auth0/new-user';
 import { auth0Login } from './remote/auth0/login';
