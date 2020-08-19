@@ -1,6 +1,6 @@
 import { Flag } from "./Flag"
 
-export class Associate {
+export interface Associate {
     email: string
     salesforceId: string
     firstName: string
