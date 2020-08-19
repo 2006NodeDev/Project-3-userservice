@@ -1,5 +1,5 @@
-import { Batch } from "../../../models/Batch";
-import { Associate } from "../../../models/Associate";
+import { Batch } from "../../models/Batch";
+import { Associate } from "../../models/Associate";
 
 export const getAssocInYearBatch = async (yearBatch:Batch[])=>{
     let assocArrayinYearBatch: Associate[] = []

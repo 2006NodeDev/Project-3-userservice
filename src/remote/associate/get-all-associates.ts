@@ -1,4 +1,5 @@
-import {caliberBaseClient} from '.'
+import { caliberBaseClient } from "..";
+
 
 export const getAllAssociates = async () => {
     try{

@@ -1,4 +1,4 @@
-import {caliberBaseClient} from '.'
+import {caliberBaseClient} from '..'
 
 export const getBatchByBatchId = async (batchId:string) => {
     try{
