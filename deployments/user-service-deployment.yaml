@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: p3-user-service-deployment
+  namespace: user-profile-system 
+  labels: 
+    app: p3
+    service: user-service
+    deployment: uat
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: p3
+      service: user-service
+  template:
+    metadata:
+      labels:
+        app: p3
+        service: user-service
+    spec:
+      containers:
+      - name: p3-user-service
+        image: gcr.io/alec-2006nodedev/user-service
+        imagePullPolicy: Always
+        env:
+        - name: AUTH0_CLIENT_ID
+          #value: "10.47.249.252"
+        - name: REACT_APP_AUTH0_CLIENT_ID 
+          #value: "postgres"
+        #- name: LB_USER #?
+         # value: "postgres"
+        #- name: LB_BASE_PATH #?
+          #value: "/user-service"
+        - name: AUTH0_CLIENT_SECRET 
+          valueFrom:
+            secretKeyRef:
+              name: secrets
+              key: password 
+        ports:
+        - containerPort: 2006
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 2006
+          initialDelaySeconds: 3
+          periodSeconds: 3
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 2006
+          initialDelaySeconds: 3
+          periodSeconds: 3
