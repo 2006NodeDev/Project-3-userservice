@@ -2,15 +2,11 @@ import express, { Request, Response, NextFunction } from 'express'
 import { auth0GetUserServiceToken } from './remote/auth0/get-user-service-token'
 import { auth0UpdatePassword } from './remote/auth0/patch-password'
 import { logger, errorLogger } from './util/loggers';
-<<<<<<< HEAD
-import { auth0UpdateRole } from './remote/auth0/patch-role';
-import { auth0CreateNewUser, User } from './remote/auth0/new-user';
-=======
 import { auth0Login } from './remote/auth0/login';
 import { auth0UpdateRole } from './remote/auth0/patch-role';
 import swaggerUi from 'swagger-ui-express';
 import * as swaggerDocument from './swagger.json';
->>>>>>> 7413f494f654046d31f37d69282aa763df805209
+import { auth0CreateNewUser, User } from './remote/auth0/new-user';
 
 const app = express()
 
@@ -55,20 +51,21 @@ app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
         logger.error(error);
     }
 })
-<<<<<<< HEAD
 
 app.post('/register' , async (req:Request, res: Response, next: NextFunction) => {
-    let {email, password, preferredName, lastName} = req.body  
-    if(!email || !password || !preferredName || !lastName){
+    let {email, password, user_metadata:{preferredName, lastName}} = req.body  
+    if(!email || !password ){
         throw new Error('Please fill out all necessary fields')
     }else {
     
         let newUser: User ={
             email,
             password,
-            preferredName,
-            lastName
+            user_metadata:{preferredName, lastName},
         } 
+        newUser.user_metadata.preferredName = newUser.user_metadata.preferredName
+        newUser.user_metadata.lastName = newUser.user_metadata.lastName
+
         try {
             // newUser, password  inside paranthesis
             let register = await auth0CreateNewUser(newUser) 
@@ -79,8 +76,6 @@ app.post('/register' , async (req:Request, res: Response, next: NextFunction) =>
     }
 })
 
-=======
->>>>>>> 7413f494f654046d31f37d69282aa763df805209
 
 app.listen(2006, () =>{
     auth0GetUserServiceToken()
