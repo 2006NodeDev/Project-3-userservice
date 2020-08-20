@@ -1,4 +1,4 @@
-import {caliberBaseClient} from '.'
+import {caliberBaseClient} from '..'
 
 export const getBatchIdByTrainer = async (trainerEmail:string) => {
     try{

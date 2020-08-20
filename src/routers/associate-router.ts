@@ -1,16 +1,11 @@
 import express, { Request, Response, NextFunction } from 'express'
-import { getAssociatesByBatchId } from '../remote/caliber-api/get-associates-by-batch-id';
-import { getAllAssociates } from '../remote/caliber-api/get-all-associates';
-import { getCurrentBatches } from '../remote/caliber-api/get-current-batches';
-// import { getAssociateswithFilter } from '../remote/caliber-api/get-associates-filter-skill';
-import { authorizationMiddleware } from '../middleware/authorization';
-import { getSkillsList } from '../remote/caliber-api/get-skills-list';
-import { getBatchIdByTrainer } from '../remote/caliber-api/get-batch-id-by-trainer';
-import { getBatchByBatchId } from '../remote/caliber-api/get-batch-by-batch-id';
-import { getAssociatesWithYear } from '../remote/caliber-api/associateFilter/get-associate-filter-year';
-import { getAssociateswithQuarter } from '../remote/caliber-api/associateFilter/get-associate-filter-quarter';
-import { getAssocBySkill } from '../remote/caliber-api/associateFilter/get-associates-filter-skill';
-import { getAssociatesByTrainer } from '../remote/caliber-api/associateFilter/get-associate-by-trainer';
+import { getAllAssociates } from '../remote/associate/get-all-associates'
+import { getCurrentBatches } from '../remote/batch/get-current-batches'
+import { getAssocBySkill } from '../remote/associateFilter/get-associates-filter-skill'
+import { getAssociatesWithYear } from '../remote/associateFilter/get-associate-filter-year'
+import { getAssociatesByTrainer } from '../remote/associate/get-associate-by-trainer'
+import { getSkillsList } from '../remote/batch/get-skills-list'
+import { getAssociateswithQuarter } from '../remote/associateFilter/get-associate-filter-quarter'
 
 export let associateRouter = express.Router()
 export let batchRouter = express.Router()
@@ -72,6 +67,18 @@ associateRouter.get('/year/:yearValue', async (req: Request, res: Response, next
     let  year = req.params.yearValue
     try {
         let assocByYear = await getAssociatesWithYear(year)
+        console.log(assocByYear)
+        res.json(assocByYear)
+    } catch (e) {
+        console.log(e)
+        next(e)
+    }
+})
+
+associateRouter.get('/quarter/:quarterValue', async (req: Request, res: Response, next: NextFunction) => {
+    let quarter = req.params.quarterValue
+    try {
+        let assocByYear = await getAssociateswithQuarter(quarter)
         console.log(assocByYear)
         res.json(assocByYear)
     } catch (e) {
