@@ -8,10 +8,12 @@ import { auth0Login } from './remote/auth0/login';
 import { checkJwt } from './middleware/jwt-verification';
 import swaggerUi from 'swagger-ui-express';
 import * as swaggerDocument from './swagger.json';
+import { corsFilter } from './middleware/cors-filter';
 
 const app = express()
 const jwtAuthz = require('express-jwt-authz');
 app.use(express.json())
+app.use(corsFilter)
 
 // const basePath = process.env['AC_BASE_PATH'] || ''
 
