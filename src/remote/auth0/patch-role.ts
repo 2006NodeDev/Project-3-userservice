@@ -1,10 +1,24 @@
 import axios from 'axios';
 import { logger } from "../../util/loggers";
 import { auth0BaseClient } from '.';
+// import { auth0GetRole } from './get-user-role';
+
+// export class Auth0User{
+//     id!:string
+//     name!:string
+//     description!:string
+//     sources!:any[]
+// }
+
 
 
 export async function auth0UpdateRole(id:number, role:string){
     //delete previous role and update to new role
+    //const currentUserRole = await auth0GetRole(12345)       //currentUser Id
+    // if(currentUserRole!="Admin"){
+    //     throw new Error('Unauthorized')
+    // }
+
     const associateRoleId = "rol_CYmNl4fBaIKxFT8Y"
     const trainerRoleId = "rol_N4hP8nXeE5QgxYHf"
     const adminRoleId = "rol_feLElhAtqbyRRgeq"
@@ -27,11 +41,23 @@ export async function auth0UpdateRole(id:number, role:string){
             data: {"roles": [associateRoleId, trainerRoleId, adminRoleId]}
         }
         await auth0BaseClient.delete(`/api/v2/users/${id}/roles`, body1);    //weired
+
         let body2 = {
             "roles": [roleId]
         };
         let result = await auth0BaseClient.post(`/api/v2/users/${id}/roles`, body2);
         logger.debug(body2);
+
+        let bodyMetadata = {
+            app_metadata: {
+                role: {
+                  role: role,
+                  role_id: roleId
+                }
+              }
+        }
+        await auth0BaseClient.patch(`/api/v2/users/${id}`, bodyMetadata);
+
         return result
         
     } catch (error) {
