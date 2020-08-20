@@ -2734,6 +2734,10 @@
   isAxiosError: true,
   toJSON: [Function]
 }
+[2020-08-18T11:20:46.865] [ERROR] error - Error: Request failed with status code 403
+    at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
 [2020-08-18T11:55:09.139] [ERROR] error - Error: Request failed with status code 401
     at createError (C:\Users\YildirimPC\Revature\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
     at settle (C:\Users\YildirimPC\Revature\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
@@ -2745,11 +2749,13 @@
   config: {
     url: '/oauth/token',
     method: 'post',
+    data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita2"}',
     data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+      'Content-Length': 253
       'Content-Length': 90
     },
     baseURL: 'https://revature-net.us.auth0.com',
@@ -2827,7 +2833,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
+      [Symbol(asyncId)]: 48,
+=======
       [Symbol(asyncId)]: 11,
+>>>>>>> 70a084c5dfeaa77e6f058eb95db33864d82dc7d3
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -2878,6 +2888,7 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+      [Symbol(asyncId)]: 48,
       [Symbol(asyncId)]: 11,
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
@@ -2895,6 +2906,7 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+      'Content-Length: 253\r\n' +
       'Content-Length: 90\r\n' +
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
@@ -2943,6 +2955,8 @@
       upgrade: false,
       url: '',
       method: null,
+      statusCode: 403,
+      statusMessage: 'Forbidden',
       statusCode: 401,
       statusMessage: 'Unauthorized',
       client: [TLSSocket],
@@ -2968,6 +2982,7 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+      _requestBodyLength: 253,
       _requestBodyLength: 90,
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
@@ -2987,6 +3002,24 @@
     }
   },
   response: {
+    status: 403,
+    statusText: 'Forbidden',
+    headers: {
+      date: 'Tue, 18 Aug 2020 18:20:46 GMT',
+      'content-type': 'application/json',
+      'content-length': '72',
+      connection: 'close',
+      server: 'nginx',
+      vary: 'Accept-Encoding',
+      'ot-tracer-spanid': '407da5ca6211159a',
+      'ot-tracer-traceid': '10df50841088c5ad',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': '7fca132872d861201b6f6fe0',
+      'x-auth0-requestid': 'b6538f18346372133169',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '100',
+      'x-ratelimit-remaining': '99',
+      'x-ratelimit-reset': '1597775711',
     status: 401,
     statusText: 'Unauthorized',
     headers: {
@@ -3009,6 +3042,7 @@
     config: {
       url: '/oauth/token',
       method: 'post',
+      data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita2"}',
       data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
@@ -3047,6 +3081,7 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+        'Content-Length: 253\r\n' +
         'Content-Length: 90\r\n' +
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
@@ -3071,6 +3106,9 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+    data: {
+      error: 'invalid_grant',
+      error_description: 'Wrong email or password.'
     data: { error: 'access_denied', error_description: 'Unauthorized' }
   },
   isAxiosError: true,
@@ -6541,6 +6579,7 @@
   isAxiosError: true,
   toJSON: [Function]
 }
+<<<<<<< HEAD
 [2020-08-19T10:52:39.502] [ERROR] error - Error: Request failed with status code 400
     at createError (C:\Users\YildirimPC\Revature\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
     at settle (C:\Users\YildirimPC\Revature\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
@@ -10704,3 +10743,29 @@
   isAxiosError: true,
   toJSON: [Function]
 }
+=======
+[2020-08-18T13:01:14.065] [ERROR] error - ReferenceError: window is not defined
+    at Object.<anonymous> (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:25:41)
+    at step (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:33:23)
+    at Object.next (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:14:53)
+    at fulfilled (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-18T13:03:43.866] [ERROR] error - ReferenceError: window is not defined
+    at Object.<anonymous> (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:25:41)
+    at step (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:33:23)
+    at Object.next (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:14:53)
+    at fulfilled (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-18T13:04:44.834] [ERROR] error - ReferenceError: window is not defined
+    at Object.<anonymous> (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:26:41)
+    at step (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:33:23)
+    at Object.next (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:14:53)
+    at fulfilled (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-18T13:07:10.206] [ERROR] error - ReferenceError: window is not defined
+    at Object.<anonymous> (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:26:41)
+    at step (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:33:23)
+    at Object.next (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:14:53)
+    at fulfilled (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/remote/auth0/login.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+>>>>>>> 9dcd652ac655afe52b03b37bad51b1f32c2c47fd
