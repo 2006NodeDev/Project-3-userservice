@@ -92,11 +92,10 @@ associateRouter.get('/quarter/:quarterValue', async (req: Request, res: Response
 //Associates across all my batches so that I can best accommodate
 //the preferences of my Associates. 
 // get associates by batch id
-associateRouter.get('/:trainerEmail', async (req: Request, res: Response, next: NextFunction) => {
+associateRouter.get('/trainer/:trainerEmail', async (req: Request, res: Response, next: NextFunction) => {
     let { trainerEmail } = req.params;
     try {
         let batches = await getAssociatesByTrainer(trainerEmail)
-       
         res.json(batches)
     } catch (e) {
         next(e)

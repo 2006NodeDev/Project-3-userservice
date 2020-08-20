@@ -9,7 +9,6 @@ export const getAssociatesByTrainer = async (trainerEmail:string) => {
         let batchIdList= await getBatchIdByTrainer(trainerEmail)
         let batches = await getBatch(batchIdList)        
         let assocBatch = await getAssocInBatch(batches)
-        
         return assocBatch   
     }catch (e){
         console.log(e)
