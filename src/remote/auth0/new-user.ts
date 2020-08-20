@@ -24,6 +24,12 @@ export async function auth0CreateNewUser(newUser:User){
             connection: "Username-Password-Authentication",
             password: newUser.password,
             user_metadata: newUser.user_metadata,
+            app_metadata:{
+                role: {
+                  role: "Associate",
+                  role_id: "rol_CYmNl4fBaIKxFT8Y"
+                }
+            },
             //{newUser.app_metadata.preferredName, newUser.user_metadata.preferredName},
             verify_email: true, 
          

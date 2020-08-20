@@ -9,6 +9,7 @@ import { checkJwt } from './middleware/jwt-verification';
 import swaggerUi from 'swagger-ui-express';
 import * as swaggerDocument from './swagger.json';
 import bodyParser from 'body-parser';
+import { corsFilter } from './middleware/cors-filter';
 
 const app = express()
 app.use(bodyParser.json())
@@ -17,6 +18,7 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.use(express.json())
+app.use(corsFilter)
 
 app.use(checkJwt);
 
