@@ -1,5 +1,5 @@
-import { Associate } from "../../models/Associate"
-import { getAllAssociates } from "../associate/get-all-associates"
+// import { Associate } from "../../models/Associate"
+// import { getAllAssociates } from "../associate/get-all-associates"
 import { getAllBatchesByQuarter } from "../batch/get-all-batches-by-quarter"
 import { getAssocInAllBatches } from "../associate/get-associates-in-all-batches"
 
