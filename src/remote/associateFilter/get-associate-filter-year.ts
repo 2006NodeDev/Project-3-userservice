@@ -1,10 +1,10 @@
 import { getAllBatchesByYear } from "../batch/get-all-batches-by-year"
-import { getAssocInBatch } from "../associate/get-associates-in-batch"
+import { getAssocInAllBatches } from "../associate/get-associates-in-all-batches"
 
 export const getAssociatesWithYear = async (year:string) => {
     try{
         let yearBatches = await getAllBatchesByYear(+year)
-        let assocInYearBatches = await getAssocInBatch(yearBatches)
+        let assocInYearBatches = await getAssocInAllBatches(yearBatches)
         return assocInYearBatches
     }catch (e){
         console.log(e)
