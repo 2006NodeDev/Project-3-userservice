@@ -1,7 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express'
 import { auth0GetUserServiceToken } from './remote/auth0/get-user-service-token'
 import { auth0UpdatePassword } from './remote/auth0/patch-password'
-import { logger } from './util/loggers';
+import { logger} from './util/loggers';
 import { auth0UpdateRole } from './remote/auth0/patch-role';
 import { auth0CreateNewUser, User } from './remote/auth0/new-user';
 import { auth0Login } from './remote/auth0/login';
@@ -68,17 +68,19 @@ app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
 })
 
 app.post('/register' , async (req:Request, res: Response, next: NextFunction) => {
-    let {email, password, preferredName, lastName} = req.body  
-    if(!email || !password || !preferredName || !lastName){
+    let {email, password, user_metadata:{preferredName, lastName}} = req.body  
+    if(!email || !password ){
         throw new Error('Please fill out all necessary fields')
     }else {
     
         let newUser: User ={
             email,
             password,
-            preferredName,
-            lastName
+            user_metadata:{preferredName, lastName},
         } 
+        newUser.user_metadata.preferredName = newUser.user_metadata.preferredName
+        newUser.user_metadata.lastName = newUser.user_metadata.lastName
+
         try {
             // newUser, password  inside paranthesis
             let register = await auth0CreateNewUser(newUser) 
