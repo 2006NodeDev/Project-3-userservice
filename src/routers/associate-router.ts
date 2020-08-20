@@ -5,6 +5,7 @@ import { getAssocBySkill } from '../remote/associateFilter/get-associates-filter
 import { getAssociatesWithYear } from '../remote/associateFilter/get-associate-filter-year'
 import { getAssociatesByTrainer } from '../remote/associate/get-associate-by-trainer'
 import { getSkillsList } from '../remote/batch/get-skills-list'
+import { getAssociateswithQuarter } from '../remote/associateFilter/get-associate-filter-quarter'
 
 export let associateRouter = express.Router()
 export let batchRouter = express.Router()
@@ -66,6 +67,18 @@ associateRouter.get('/year/:yearValue', async (req: Request, res: Response, next
     let  year = req.params.yearValue
     try {
         let assocByYear = await getAssociatesWithYear(year)
+        console.log(assocByYear)
+        res.json(assocByYear)
+    } catch (e) {
+        console.log(e)
+        next(e)
+    }
+})
+
+associateRouter.get('/quarter/:quarterValue', async (req: Request, res: Response, next: NextFunction) => {
+    let quarter = req.params.quarterValue
+    try {
+        let assocByYear = await getAssociateswithQuarter(quarter)
         console.log(assocByYear)
         res.json(assocByYear)
     } catch (e) {
