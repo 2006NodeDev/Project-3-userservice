@@ -5,8 +5,6 @@ import { getAssocInBatch } from "../associate/get-associates-in-batch"
 
 export const getAssociateswithQuarter = async (quarter:string) => {
     try{
-        // let allAssoc= await getAllAssociates()
-        // let res:Associate[] = []
         let quarterBatches = await getAllBatchesByQuarter(+quarter)
         let assocInQuarterBatches = await getAssocInBatch(quarterBatches)
         return assocInQuarterBatches
