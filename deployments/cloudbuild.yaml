@@ -20,7 +20,7 @@ steps:
     args:
     - -c
     - |
-      npm run build:clean
+      npm run build
 # This step builds the container image.
   - name: 'gcr.io/cloud-builders/docker'
     id: Build Image
