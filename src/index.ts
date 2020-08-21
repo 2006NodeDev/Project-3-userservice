@@ -5,7 +5,7 @@ import { logger} from './util/loggers';
 import { auth0UpdateRole } from './remote/auth0/patch-role';
 import { auth0CreateNewUser, User } from './remote/auth0/new-user';
 import { auth0Login } from './remote/auth0/login';
-import { checkJwt } from './middleware/jwt-verification';
+//import { checkJwt } from './middleware/jwt-verification';
 import swaggerUi from 'swagger-ui-express';
 import * as swaggerDocument from './swagger.json';
 import { corsFilter } from './middleware/cors-filter';
@@ -14,7 +14,9 @@ import { associateRouter } from './routers/associate-router';
 
 
 const app = express()
-const jwtAuthz = require('express-jwt-authz');
+
+// const jwtAuthz = require('express-jwt-authz');
+
 app.use(express.json())
 app.use(corsFilter)
 
@@ -92,15 +94,15 @@ app.use(corsFilter)
 // app.use('/batches', batchRouter);
 app.use('/associates', associateRouter);
 
-// app.use((err, req, res, next) => {
-//     if (err.statusCode){
-//         res.status(err.statusCode).send(err.message)
-//     }else{
-//         console.log(err)
-//         res.status(500).send('Something Went Wrong')
+app.use((err, req, res, next) => {
+    if (err.statusCode){
+        res.status(err.statusCode).send(err.message)
+    }else{
+        console.log(err)
+        res.status(500).send('Something Went Wrong')
 
-//     }
-// })
+    }
+})
 
 app.listen(2006, () =>{
     auth0GetUserServiceToken()
