@@ -9,11 +9,14 @@ import swaggerUi from 'swagger-ui-express';
 import * as swaggerDocument from './swagger.json';
 import bodyParser from 'body-parser';
 import { corsFilter } from './middleware/cors-filter';
-import { checkJwt } from './middleware/jwt-verification';
+// import { checkJwt } from './middleware/jwt-verification';
 import jwt_decode from "jwt-decode";
 import { auth0GetRole } from "./remote/auth0/get-user-role";
 import { userConverter } from './util/userConverter';
 import { roleConverter } from './util/roleConverter';
+import { associateRouter } from './routers/associate-router';
+// import { batchRouter } from './routers/batch-router';
+
 
 const app = express()
 app.use(bodyParser.json())
@@ -113,8 +116,25 @@ app.post('/register' , async (req:Request, res: Response, next: NextFunction) =>
 })
 
 
+app.use(corsFilter)
+
+
+// app.use('/batches', batchRouter);
+app.use('/associates', associateRouter);
+
+// app.use((err, req, res, next) => {
+//     if (err.statusCode){
+//         res.status(err.statusCode).send(err.message)
+//     }else{
+//         console.log(err)
+//         res.status(500).send('Something Went Wrong')
+
+//     }
+// })
+
 app.listen(2006, () =>{
     auth0GetUserServiceToken()
     app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
     logger.info('Server has started!')
 } )
+
