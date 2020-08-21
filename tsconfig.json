@@ -23,6 +23,7 @@
   "exclude": [
     "node_modules",
     "build",
+    "coverage",
     "scripts",
     "styleguide.config.js",
     "docs",
