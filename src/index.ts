@@ -73,6 +73,7 @@ app.patch('/updatePassword', (req:Request, res:Response, next:NextFunction) => {
         let update = auth0UpdatePassword(userId, password);
         res.json(update);
     } catch (error) {
+        logger.error('unable to update password')
         logger.error(error);
     }
 })
