@@ -15,6 +15,7 @@ import { auth0GetRole } from "./remote/auth0/get-user-role";
 import { userConverter } from './util/userConverter';
 import { roleConverter } from './util/roleConverter';
 import { associateRouter } from './routers/associate-router';
+import { getEmails } from './service/verifyEmail';
 // import { batchRouter } from './routers/batch-router';
 
 
@@ -92,26 +93,35 @@ app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
 })
 
 app.post('/register' , async (req:Request, res: Response, next: NextFunction) => {
-    let {email, password, user_metadata:{preferredName, lastName}} = req.body  
-    if(!email || !password ){
-        throw new Error('Please fill out all necessary fields')
-    }else {
-    
-        let newUser: User ={
-            email,
-            password,
-            user_metadata:{preferredName, lastName},
-        } 
-        newUser.user_metadata.preferredName = newUser.user_metadata.preferredName
-        newUser.user_metadata.lastName = newUser.user_metadata.lastName
+    let {email, password, user_metadata:{preferredName, lastName}} = req.body
+    try {
+        let verifyEmail = await getEmails(email);
+        logger.debug(`Is email in caliber: ${verifyEmail}`)
+  
+        if(!email || !password ){
+            throw new Error('Please fill out all necessary fields')
+        }else if (verifyEmail === false){
+            throw new Error('You must use an email that is in Caliber.')
+        }else {
+        
+            let newUser: User ={
+                email,
+                password,
+                user_metadata:{preferredName, lastName},
+            } 
+            newUser.user_metadata.preferredName = newUser.user_metadata.preferredName
+            newUser.user_metadata.lastName = newUser.user_metadata.lastName
 
-        try {
-            // newUser, password  inside paranthesis
-            let register = await auth0CreateNewUser(newUser) 
-            res.json(register)
-        } catch (error) {
-            logger.error(error)
+            try {
+                // newUser, password  inside paranthesis
+                let register = await auth0CreateNewUser(newUser) 
+                res.json(register)
+            } catch (error) {
+                logger.error(error)
+            }
         }
+    } catch (error) {
+        logger.error(error)
     }
 })
 
