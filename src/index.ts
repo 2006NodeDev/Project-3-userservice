@@ -5,11 +5,15 @@ import { logger} from './util/loggers';
 import { auth0UpdateRole } from './remote/auth0/patch-role';
 import { auth0CreateNewUser, User } from './remote/auth0/new-user';
 import { auth0Login } from './remote/auth0/login';
-import { checkJwt } from './middleware/jwt-verification';
 import swaggerUi from 'swagger-ui-express';
 import * as swaggerDocument from './swagger.json';
 import bodyParser from 'body-parser';
 import { corsFilter } from './middleware/cors-filter';
+import { checkJwt } from './middleware/jwt-verification';
+import jwt_decode from "jwt-decode";
+import { auth0GetRole } from "./remote/auth0/get-user-role";
+import { userConverter } from './util/userConverter';
+import { roleConverter } from './util/roleConverter';
 
 const app = express()
 app.use(bodyParser.json())
@@ -20,14 +24,11 @@ app.use(bodyParser.urlencoded({
 app.use(express.json())
 app.use(corsFilter)
 
-app.use(checkJwt);
-
 // const basePath = process.env['AC_BASE_PATH'] || ''
 
 //For a route that needs authentication: include 'checkJwt' in the path
 //For a route that needs permissions(scopes): include 'checkJwt, jwtAuthz([ 'read:messages' ])' to the path, similar to the roles array we used before
 
-// app.use(debugToken)
 
 app.post('/login',  async (req:Request, res:Response, next:NextFunction) => {
     let { username } = req.body
@@ -39,15 +40,32 @@ app.post('/login',  async (req:Request, res:Response, next:NextFunction) => {
     else {
         try {
             let userToken = await auth0Login(username, password)
-            res.header('Authorization', `Bearer ${userToken}`)
-            res.json(userToken)
+            res.header('Authorization', `Bearer ${userToken.access_token}`)
+            // let user = await auth0GetUser(userToken);
+            // logger.debug(`the getUser result: ${user}`);
+            logger.debug(userToken.scopes)
+            let result = jwt_decode(userToken.id_token)
+            logger.debug(result)
+            let user = userConverter(result)
+            res.json(user)
         } catch (e) {
             logger.error(e)
         }
     }
 })
 
-  
+// app.use(checkJwt);
+
+app.get('/getRole/:id', async (req:Request, res:Response, next:NextFunction) =>{
+    try {
+        let { id } = req.params
+        let result = await auth0GetRole(id)
+        let role = roleConverter(result)
+        res.json(role)
+    } catch (error) {
+        logger.error(error)
+    }
+})
 
 app.patch('/updatePassword', (req:Request, res:Response, next:NextFunction) => {
     let { userId, password } = req.body;
