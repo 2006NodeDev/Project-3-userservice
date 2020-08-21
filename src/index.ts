@@ -82,9 +82,9 @@ app.patch('/updatePassword', (req:Request, res:Response, next:NextFunction) => {
 })
 
 app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
-    let { userId, role } = req.body;
+    let { currentUserId, userId, role } = req.body;
     try {
-        let update = auth0UpdateRole(userId, role);
+        let update = auth0UpdateRole(currentUserId, userId, role);
         res.json(update);
     } catch (error) {
         logger.error(error);
@@ -137,4 +137,3 @@ app.listen(2006, () =>{
     app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
     logger.info('Server has started!')
 } )
-
