@@ -58,7 +58,7 @@ steps:
     - '-c'
     - |
       cd deployments
-      sed "s/COMMIT_SHA/${SHORT_SHA}/g" user-service-deployment.yaml.tpl > ../../user-service-manifest/deployment.yaml
+      sed "s/COMMIT_SHA/${SHORT_SHA}/g" user-service-deployment.yaml.tpl > ../user-service-manifest/deployment.yaml
 # This step pushes the manifest back to hello-cloudbuild-env
   - name: 'gcr.io/cloud-builders/gcloud'
     id: Push manifest
