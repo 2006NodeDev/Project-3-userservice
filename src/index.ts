@@ -20,6 +20,11 @@ const app = express()
 app.use(express.json())
 app.use(corsFilter)
 
+//health check! for load balancer and build
+app.get('/health', (req: Request, res: Response) => {
+    res.sendStatus(200)
+})
+
 // const basePath = process.env['AC_BASE_PATH'] || ''
 
 //For a route that needs authentication: include 'checkJwt' in the path
