@@ -5,6 +5,7 @@ steps:
     entrypoint: /bin/bash
     args:
     - -c
+    - |
       npm install
   - name: 'node'
     id: Test
@@ -12,15 +13,13 @@ steps:
     args:
     - -c
     - |
-      cd deployments
       npm test
   - name: 'node'
     id: Build
     entrypoint: /bin/bash
     args:
     - -c
-    - | 
-      cd deployments
+    - |
       npm run build
 # This step builds the container image.
   - name: 'gcr.io/cloud-builders/docker'
@@ -29,7 +28,6 @@ steps:
     args:
     - -c
     - |
-      cd deployments
       docker build -t gcr.io/$PROJECT_ID/user-service:$SHORT_SHA .
 # This step pushes the image to Container Registry
 # The PROJECT_ID and SHORT_SHA variables are automatically
