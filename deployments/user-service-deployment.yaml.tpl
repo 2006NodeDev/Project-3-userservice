@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: p3-user-service
-        image: gcr.io/alec-2006nodedev/user-service:$COMMIT_SHA .
+        image: gcr.io/alec-2006nodedev/user-service:COMMIT_SHA
         imagePullPolicy: Always
         env:
         - name: AUTH0_CLIENT_ID
