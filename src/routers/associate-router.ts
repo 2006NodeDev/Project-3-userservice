@@ -8,6 +8,7 @@ import { getSkillsList } from '../remote/batch/get-skills-list'
 import { getAssociateswithQuarter } from '../remote/associateFilter/get-associate-filter-quarter'
 import { getAssociatesByEmail } from '../remote/associate/get-associate-by-email'
 import { getBatchByAssociatesEmail } from '../remote/batch/get-batch-by-associate-email'
+import { getAssociatesInTrainersCurrentBatch } from '../remote/associateFilter/get-associates-in-trainer-current-batch'
 
 export let associateRouter = express.Router()
 export let batchRouter = express.Router()
@@ -130,6 +131,26 @@ associateRouter.get('/batch/:associateEmail', async (req: Request, res: Response
     let { associateEmail } = req.params;
     try {
         let batches = await getBatchByAssociatesEmail(associateEmail)
+        res.json(batches)
+    } catch (e) {
+        next(e)
+    }
+})
+
+associateRouter.get('/batch/:associateEmail', async (req: Request, res: Response, next: NextFunction) => {
+    let { associateEmail } = req.params;
+    try {
+        let batches = await getBatchByAssociatesEmail(associateEmail)
+        res.json(batches)
+    } catch (e) {
+        next(e)
+    }
+})
+
+associateRouter.get('/batch/current/:trainerEmail', async (req: Request, res: Response, next: NextFunction) => {
+    let { trainerEmail } = req.params;
+    try {
+        let batches = await getAssociatesInTrainersCurrentBatch(trainerEmail)
         res.json(batches)
     } catch (e) {
         next(e)
