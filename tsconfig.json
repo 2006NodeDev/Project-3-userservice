@@ -29,7 +29,6 @@
     "docs",
     "acceptance-tests",
     "webpack",
-    "jest",
     "src/**/*.test.ts"
   ]
 }
