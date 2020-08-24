@@ -157,20 +157,7 @@
                     }
                 }
             }
-        },
-        "/logOut": {
-            "get": {
-                "tags": [
-                    "User"
-                ],
-                "summary": "User can logout and end their session",
-                "responses": {
-                    "200": {
-                        "description": "OK"
-                    }
-                }
-            }
-        }
+        } 
     },
     "definitions": {
         "signUp": {
