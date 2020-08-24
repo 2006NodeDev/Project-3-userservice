@@ -1,5 +1,5 @@
 import { auth0BaseClient } from ".";
-import { logger } from "../../util/loggers";
+import { logger } from "../../utils/loggers";
 
 export async function auth0GetUserByEmail(email:string):Promise<any>{
 
