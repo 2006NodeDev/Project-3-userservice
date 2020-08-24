@@ -6,6 +6,9 @@ import { getAssociatesWithYear } from '../remote/associateFilter/get-associate-f
 import { getAssociatesByTrainer } from '../remote/associate/get-associate-by-trainer'
 import { getSkillsList } from '../remote/batch/get-skills-list'
 import { getAssociateswithQuarter } from '../remote/associateFilter/get-associate-filter-quarter'
+import { getAssociatesByEmail } from '../remote/associate/get-associate-by-email'
+import { getBatchByAssociatesEmail } from '../remote/batch/get-batch-by-associate-email'
+import { getAssociatesInTrainersCurrentBatch } from '../remote/associateFilter/get-associates-in-trainer-current-batch'
 
 export let associateRouter = express.Router()
 export let batchRouter = express.Router()
@@ -35,7 +38,17 @@ associateRouter.get('/', async (req: Request, res: Response, next: NextFunction)
     }
 })
 
+associateRouter.get('/:email', async (req: Request, res: Response, next: NextFunction) => {
+    let email = req.params.email
 
+    try {
+        let user = await getAssociatesByEmail(email)
+        res.json(user)
+
+    } catch (e) {
+        next(e)
+    }
+})
 
 
 associateRouter.get('/currentBatches', async (req: Request, res: Response, next: NextFunction) => {
@@ -107,6 +120,28 @@ associateRouter.get('/batch/skills', async (req: Request, res: Response, next: N
     try {
         let user = await getSkillsList()
         res.json(user)
+    } catch (e) {
+        next(e)
+    }
+})
+
+
+
+associateRouter.get('/batch/:associateEmail', async (req: Request, res: Response, next: NextFunction) => {
+    let { associateEmail } = req.params;
+    try {
+        let batches = await getBatchByAssociatesEmail(associateEmail)
+        res.json(batches)
+    } catch (e) {
+        next(e)
+    }
+})
+
+associateRouter.get('/batch/current/:trainerEmail', async (req: Request, res: Response, next: NextFunction) => {
+    let { trainerEmail } = req.params;
+    try {
+        let associates = await getAssociatesInTrainersCurrentBatch(trainerEmail)
+        res.json(associates)
     } catch (e) {
         next(e)
     }

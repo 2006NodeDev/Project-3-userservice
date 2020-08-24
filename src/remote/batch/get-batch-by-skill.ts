@@ -1,4 +1,4 @@
-import { Associate } from "../../models/Associate"
+// import { Associate } from "../../models/Associate"
 import { Batch } from "../../models/Batch"
 
 export const getBatchBySkill = async (allBatches:Batch[], skill:string)=>{
