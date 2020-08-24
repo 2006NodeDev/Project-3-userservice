@@ -9,7 +9,7 @@ import swaggerUi from 'swagger-ui-express';
 import * as swaggerDocument from './swagger.json';
 import bodyParser from 'body-parser';
 import { corsFilter } from './middleware/cors-filter';
-// import { checkJwt } from './middleware/jwt-verification';
+import { checkJwt } from './middleware/jwt-verification';
 import jwt_decode from "jwt-decode";
 import { auth0GetRole } from "./remote/auth0/get-user-role";
 import { userConverter } from './util/userConverter';
@@ -26,15 +26,19 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.use(express.json())
+
+const basePath = process.env['AC_BASE_PATH'] || '/user-service'
+const basePathRouter = express.Router();
+app.use(basePath, basePathRouter);
 app.use(corsFilter)
 
-// const basePath = process.env['AC_BASE_PATH'] || ''
+
 
 //For a route that needs authentication: include 'checkJwt' in the path
 //For a route that needs permissions(scopes): include 'checkJwt, jwtAuthz([ 'read:messages' ])' to the path, similar to the roles array we used before
 
 
-app.post('/login',  async (req:Request, res:Response, next:NextFunction) => {
+basePathRouter.post('/login',  async (req:Request, res:Response, next:NextFunction) => {
     let { username } = req.body
     let { password } = req.body
 
@@ -54,45 +58,12 @@ app.post('/login',  async (req:Request, res:Response, next:NextFunction) => {
             res.json(user)
         } catch (e) {
             logger.error(e)
+            next(e)
         }
     }
 })
 
-// app.use(checkJwt);
-
-app.get('/getRole/:id', async (req:Request, res:Response, next:NextFunction) =>{
-    try {
-        let { id } = req.params
-        let result = await auth0GetRole(id)
-        let role = roleConverter(result)
-        res.json(role)
-    } catch (error) {
-        logger.error(error)
-    }
-})
-
-app.patch('/updatePassword', (req:Request, res:Response, next:NextFunction) => {
-    let { userId, password } = req.body;
-    try {
-        let update = auth0UpdatePassword(userId, password);
-        res.json(update);
-    } catch (error) {
-        logger.error('unable to update password')
-        logger.error(error);
-    }
-})
-
-app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
-    let { currentUserId, userId, role } = req.body;
-    try {
-        let update = auth0UpdateRole(currentUserId, userId, role);
-        res.json(update);
-    } catch (error) {
-        logger.error(error);
-    }
-})
-
-app.post('/register' , async (req:Request, res: Response, next: NextFunction) => {
+basePathRouter.post('/register' , async (req:Request, res: Response, next: NextFunction) => {
     let {email, password, user_metadata:{preferredName, lastName}} = req.body
     try {
         let verifyEmail = await getEmails(email);
@@ -122,15 +93,52 @@ app.post('/register' , async (req:Request, res: Response, next: NextFunction) =>
         }
     } catch (error) {
         logger.error(error)
+        next(error)
     }
 })
 
+basePathRouter.use(checkJwt);
 
-app.use(corsFilter)
+basePathRouter.get('/getRole/:id', async (req:Request, res:Response, next:NextFunction) =>{
+    try {
+        let { id } = req.params
+        let result = await auth0GetRole(id)
+        let role = roleConverter(result)
+        res.json(role)
+    } catch (error) {
+        logger.error(error)
+        next(error)
+    }
+})
+
+basePathRouter.patch('/updatePassword', (req:Request, res:Response, next:NextFunction) => {
+    let { userId, password } = req.body;
+    try {
+        let update = auth0UpdatePassword(userId, password);
+        res.json(update);
+    } catch (error) {
+        logger.error('unable to update password')
+        logger.error(error);
+        next(error)
+    }
+})
+
+basePathRouter.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
+    let { currentUserId, userId, role } = req.body;
+    try {
+        let update = auth0UpdateRole(currentUserId, userId, role);
+        res.json(update);
+    } catch (error) {
+        logger.error(error);
+        next(error)
+    }
+})
+
+basePathRouter.use(corsFilter)
 
 
 // app.use('/batches', batchRouter);
-app.use('/associates', associateRouter);
+basePathRouter.use('/associates', associateRouter);
 
 // app.use((err, req, res, next) => {
 //     if (err.statusCode){
@@ -140,6 +148,10 @@ app.use('/associates', associateRouter);
 //         res.status(500).send('Something Went Wrong')
 
 //     }
+// })
+
+// app.get('/health', (req:Request, res:Response)=>{
+//     res.sendStatus(200);
 // })
 
 app.listen(2006, () =>{
