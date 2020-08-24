@@ -16,6 +16,7 @@ import { userConverter } from './util/userConverter';
 import { roleConverter } from './util/roleConverter';
 import { associateRouter } from './routers/associate-router';
 import { getEmails } from './service/verifyEmail';
+import { auth0GetUserByEmail } from './remote/auth0/get-user-email';
 // import { batchRouter } from './routers/batch-router';
 
 
@@ -83,9 +84,9 @@ app.patch('/updatePassword', (req:Request, res:Response, next:NextFunction) => {
 })
 
 app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
-    let { currentUserId, userId, role } = req.body;
+    let { currentUserId, email, role } = req.body;
     try {
-        let update = auth0UpdateRole(currentUserId, userId, role);
+        let update = auth0UpdateRole(currentUserId, email, role);
         res.json(update);
     } catch (error) {
         logger.error(error);
