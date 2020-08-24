@@ -8,22 +8,24 @@ import { getSkillsList } from '../remote/batch/get-skills-list'
 import { getAssociateswithQuarter } from '../remote/associateFilter/get-associate-filter-quarter'
 import { getAssociatesByEmail } from '../remote/associate/get-associate-by-email'
 import { getBatchByAssociatesEmail } from '../remote/batch/get-batch-by-associate-email'
+import { getAssociatesInTrainersCurrentBatch } from '../remote/associateFilter/get-associates-in-trainer-current-batch'
+import { getAssociatesByBatchId } from '../remote/associate/get-associates-by-batch-id'
 
 export let associateRouter = express.Router()
-export let batchRouter = express.Router()
 
 // auth middleware goes here
 // associatesRouter.use(authenticationMiddleware);
 
-// associateRouter.get('/batches/:batchId', async (req:Request, res:Response, next:NextFunction) => {
-//     let {batchId} = req.params;
-//     try{
-//         let user = await getAssociatesByBatchId(batchId)
-//         res.json(user)
-//     } catch (e){
-//         next(e)
-//     }
-// })
+//get associates in a batch, given their batch ID
+associateRouter.get('/batches/:batchId', async (req:Request, res:Response, next:NextFunction) => {
+    let {batchId} = req.params;
+    try{
+        let assocInBatch = await getAssociatesByBatchId(batchId)
+        res.json(assocInBatch)
+    } catch (e){
+        next(e)
+    }
+})
 
 associateRouter.get('/', async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -131,6 +133,16 @@ associateRouter.get('/batch/:associateEmail', async (req: Request, res: Response
     try {
         let batches = await getBatchByAssociatesEmail(associateEmail)
         res.json(batches)
+    } catch (e) {
+        next(e)
+    }
+})
+
+associateRouter.get('/batch/current/:trainerEmail', async (req: Request, res: Response, next: NextFunction) => {
+    let { trainerEmail } = req.params;
+    try {
+        let associates = await getAssociatesInTrainersCurrentBatch(trainerEmail)
+        res.json(associates)
     } catch (e) {
         next(e)
     }

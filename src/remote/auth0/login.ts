@@ -17,11 +17,12 @@ export async function auth0Login(username:string, password:string) {
             audience: 'http://companion.revature.net',
             grant_type: 'password',
             username,
-            password
+            password,
+            scope: "openid"
         }
         let res = await auth0BaseClient.post('/oauth/token', body)
-        logger.debug(res.data)
-        return res.data.access_token
+        // logger.debug(res.data)
+        return res.data
     } catch(e) {
         logger.debug(e)
         errorLogger.error(e)
