@@ -10,7 +10,6 @@ import { auth0Login } from './remote/auth0/login';
 // import * as swaggerDocument from './swagger.json';
 import { corsFilter } from './middleware/cors-filter';
 import { associateRouter } from './routers/associate-router';
-// import { batchRouter } from './routers/batch-router';
 
 
 const app = express()
