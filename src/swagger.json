@@ -27,7 +27,7 @@
         "application/json"
     ],
     "paths":{
-        "/signUp":{
+        "/register":{
             "post":{
                 "tags":[
                     "User"
@@ -39,7 +39,7 @@
                         "name":"body",
                         "description": "New user can register",
                         "schema":{
-                            "$ref":"#/definitions/signUp"
+                            "$ref":"#/definitions/register"
                         }
                     }
                 ],
@@ -50,7 +50,7 @@
                     "200":{
                         "description": "OK",
                         "schema":{
-                            "$ref":"#/definitions/signUp"
+                            "$ref":"#/definitions/register"
                         }
                     },
                     "400":{
@@ -173,7 +173,7 @@
         }
     },
     "definitions":{
-        "signUp":{
+        "register":{
             "type":"object",
             "properties":{
                 "email":{
