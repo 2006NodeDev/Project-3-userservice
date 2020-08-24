@@ -1,4 +1,4 @@
-import { logger, errorLogger } from "../../util/loggers";
+import { logger, errorLogger } from "../../utils/loggers";
 import { auth0BaseClient } from ".";
 import { UserNotFoundError } from "../../errors/UserNotFoundError";
 require('dotenv').config()

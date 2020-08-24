@@ -6169,10 +6169,17 @@
   isAxiosError: true,
   toJSON: [Function]
 }
+<<<<<<< HEAD
 [2020-08-21T09:58:45.604] [ERROR] error - Error: Request failed with status code 403
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
     at IncomingMessage.handleStreamEnd (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
+=======
+[2020-08-20T16:14:36.504] [ERROR] error - Error: Request failed with status code 401
+    at createError (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\axios\lib\adapters\http.js:236:11)
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
@@ -6180,12 +6187,20 @@
   config: {
     url: '/oauth/token',
     method: 'post',
+<<<<<<< HEAD
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+    data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+<<<<<<< HEAD
       'Content-Length': 271
+=======
+      'Content-Length': 90
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -6262,7 +6277,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 54,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -6313,7 +6332,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 54,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -6330,7 +6353,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 271\r\n' +
+=======
+      'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -6378,8 +6405,13 @@
       upgrade: false,
       url: '',
       method: null,
+<<<<<<< HEAD
       statusCode: 403,
       statusMessage: 'Forbidden',
+=======
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       client: [TLSSocket],
       _consuming: false,
       _dumped: false,
@@ -6403,7 +6435,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 271,
+=======
+      _requestBodyLength: 90,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -6422,6 +6458,7 @@
     }
   },
   response: {
+<<<<<<< HEAD
     status: 403,
     statusText: 'Forbidden',
     headers: {
@@ -6440,12 +6477,35 @@
       'x-ratelimit-limit': '100',
       'x-ratelimit-remaining': '99',
       'x-ratelimit-reset': '1598029990',
+=======
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Thu, 20 Aug 2020 20:14:36 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '366561c96c821b25',
+      'ot-tracer-traceid': '74c8b6a65d394848',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': 'c13df82848cb592475b38b7a',
+      'x-auth0-requestid': 'a14b5254186e9718db2b',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1597954477',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
+<<<<<<< HEAD
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+      data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -6483,7 +6543,11 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
         'Content-Length: 271\r\n' +
+=======
+        'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -6507,18 +6571,29 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+<<<<<<< HEAD
     data: {
       error: 'invalid_grant',
       error_description: 'Wrong email or password.'
     }
+=======
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
   },
   isAxiosError: true,
   toJSON: [Function]
 }
+<<<<<<< HEAD
 [2020-08-21T09:59:35.698] [ERROR] error - Error: Request failed with status code 403
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
     at IncomingMessage.handleStreamEnd (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
+=======
+[2020-08-21T09:32:24.859] [ERROR] error - Error: Request failed with status code 401
+    at createError (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\adapters\http.js:236:11)
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
@@ -6526,12 +6601,20 @@
   config: {
     url: '/oauth/token',
     method: 'post',
+<<<<<<< HEAD
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+    data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+<<<<<<< HEAD
       'Content-Length': 271
+=======
+      'Content-Length': 90
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -6608,7 +6691,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 108,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -6659,7 +6746,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 108,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -6676,7 +6767,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 271\r\n' +
+=======
+      'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -6724,8 +6819,13 @@
       upgrade: false,
       url: '',
       method: null,
+<<<<<<< HEAD
       statusCode: 403,
       statusMessage: 'Forbidden',
+=======
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       client: [TLSSocket],
       _consuming: false,
       _dumped: false,
@@ -6749,7 +6849,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 271,
+=======
+      _requestBodyLength: 90,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -6768,6 +6872,7 @@
     }
   },
   response: {
+<<<<<<< HEAD
     status: 403,
     statusText: 'Forbidden',
     headers: {
@@ -6786,12 +6891,35 @@
       'x-ratelimit-limit': '100',
       'x-ratelimit-remaining': '98',
       'x-ratelimit-reset': '1598030854',
+=======
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Fri, 21 Aug 2020 13:32:23 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '3ea051bb5cb75de1',
+      'ot-tracer-traceid': '0a9f037012925c3d',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': '21e02a48700b65501b38e268',
+      'x-auth0-requestid': '482217a5b2d6004c83ae',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598016744',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
+<<<<<<< HEAD
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+      data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -6829,7 +6957,11 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
         'Content-Length: 271\r\n' +
+=======
+        'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -6853,18 +6985,29 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+<<<<<<< HEAD
     data: {
       error: 'invalid_grant',
       error_description: 'Wrong email or password.'
     }
+=======
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
   },
   isAxiosError: true,
   toJSON: [Function]
 }
+<<<<<<< HEAD
 [2020-08-21T12:35:25.536] [ERROR] error - Error: Request failed with status code 403
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
     at IncomingMessage.handleStreamEnd (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
+=======
+[2020-08-21T09:33:05.488] [ERROR] error - Error: Request failed with status code 401
+    at createError (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\adapters\http.js:236:11)
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
@@ -6872,12 +7015,20 @@
   config: {
     url: '/oauth/token',
     method: 'post',
+<<<<<<< HEAD
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+    data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+<<<<<<< HEAD
       'Content-Length': 271
+=======
+      'Content-Length': 90
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -6954,7 +7105,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 128,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -7005,7 +7160,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 128,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -7022,7 +7181,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 271\r\n' +
+=======
+      'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -7070,8 +7233,13 @@
       upgrade: false,
       url: '',
       method: null,
+<<<<<<< HEAD
       statusCode: 403,
       statusMessage: 'Forbidden',
+=======
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       client: [TLSSocket],
       _consuming: false,
       _dumped: false,
@@ -7095,7 +7263,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 271,
+=======
+      _requestBodyLength: 90,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -7114,6 +7286,7 @@
     }
   },
   response: {
+<<<<<<< HEAD
     status: 403,
     statusText: 'Forbidden',
     headers: {
@@ -7132,12 +7305,35 @@
       'x-ratelimit-limit': '100',
       'x-ratelimit-remaining': '99',
       'x-ratelimit-reset': '1598039390',
+=======
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Fri, 21 Aug 2020 13:33:03 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '4d752fde296257f7',
+      'ot-tracer-traceid': '0eeadcfe689c31b9',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': '1b721c109bf75016c9ef141a',
+      'x-auth0-requestid': 'ecaa7a6187e640df08c1',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598016784',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
+<<<<<<< HEAD
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+      data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -7175,7 +7371,11 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
         'Content-Length: 271\r\n' +
+=======
+        'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -7199,18 +7399,29 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+<<<<<<< HEAD
     data: {
       error: 'invalid_grant',
       error_description: 'Wrong email or password.'
     }
+=======
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
   },
   isAxiosError: true,
   toJSON: [Function]
 }
+<<<<<<< HEAD
 [2020-08-21T12:36:03.281] [ERROR] error - Error: Request failed with status code 403
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
     at IncomingMessage.handleStreamEnd (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
+=======
+[2020-08-21T09:35:31.417] [ERROR] error - Error: Request failed with status code 401
+    at createError (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\adapters\http.js:236:11)
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
@@ -7218,12 +7429,20 @@
   config: {
     url: '/oauth/token',
     method: 'post',
+<<<<<<< HEAD
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+    data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+<<<<<<< HEAD
       'Content-Length': 271
+=======
+      'Content-Length': 220
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -7300,7 +7519,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 182,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -7351,7 +7574,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 182,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -7368,7 +7595,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 271\r\n' +
+=======
+      'Content-Length: 220\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -7416,8 +7647,13 @@
       upgrade: false,
       url: '',
       method: null,
+<<<<<<< HEAD
       statusCode: 403,
       statusMessage: 'Forbidden',
+=======
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       client: [TLSSocket],
       _consuming: false,
       _dumped: false,
@@ -7441,7 +7677,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 271,
+=======
+      _requestBodyLength: 220,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -7460,6 +7700,7 @@
     }
   },
   response: {
+<<<<<<< HEAD
     status: 403,
     statusText: 'Forbidden',
     headers: {
@@ -7478,12 +7719,35 @@
       'x-ratelimit-limit': '100',
       'x-ratelimit-remaining': '98',
       'x-ratelimit-reset': '1598040254',
+=======
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Fri, 21 Aug 2020 13:35:29 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '15a50a555619ea54',
+      'ot-tracer-traceid': '6cc1c06a0e74d1ce',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': '45fa8af2a3061659923f2303',
+      'x-auth0-requestid': '717f2317c6b7e90af6f4',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598016930',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
+<<<<<<< HEAD
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+      data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -7521,7 +7785,11 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
         'Content-Length: 271\r\n' +
+=======
+        'Content-Length: 220\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -7545,6 +7813,7 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+<<<<<<< HEAD
     data: {
       error: 'invalid_grant',
       error_description: 'Wrong email or password.'
@@ -7839,6 +8108,17 @@
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
     at IncomingMessage.handleStreamEnd (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
+=======
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+  },
+  isAxiosError: true,
+  toJSON: [Function]
+}
+[2020-08-21T09:37:04.638] [ERROR] error - Error: Request failed with status code 401
+    at createError (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\adapters\http.js:236:11)
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
@@ -7846,12 +8126,20 @@
   config: {
     url: '/oauth/token',
     method: 'post',
+<<<<<<< HEAD
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"L","scope":"openid"}',
+=======
+    data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+<<<<<<< HEAD
       'Content-Length': 264
+=======
+      'Content-Length': 220
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -7928,7 +8216,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 54,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -7979,7 +8271,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 54,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -7996,7 +8292,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 264\r\n' +
+=======
+      'Content-Length: 220\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -8044,8 +8344,13 @@
       upgrade: false,
       url: '',
       method: null,
+<<<<<<< HEAD
       statusCode: 403,
       statusMessage: 'Forbidden',
+=======
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       client: [TLSSocket],
       _consuming: false,
       _dumped: false,
@@ -8069,7 +8374,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 264,
+=======
+      _requestBodyLength: 220,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -8088,6 +8397,7 @@
     }
   },
   response: {
+<<<<<<< HEAD
     status: 403,
     statusText: 'Forbidden',
     headers: {
@@ -8106,12 +8416,35 @@
       'x-ratelimit-limit': '100',
       'x-ratelimit-remaining': '99',
       'x-ratelimit-reset': '1598138909',
+=======
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Fri, 21 Aug 2020 13:37:03 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '331a41fd160ab8d5',
+      'ot-tracer-traceid': '57029a5f7560ec0e',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': 'dee3ced1690018298d9af794',
+      'x-auth0-requestid': '9a0df1843c4e4ece9aa8',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598017024',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
+<<<<<<< HEAD
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"L","scope":"openid"}',
+=======
+      data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -8149,7 +8482,11 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
         'Content-Length: 264\r\n' +
+=======
+        'Content-Length: 220\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -8173,18 +8510,29 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+<<<<<<< HEAD
     data: {
       error: 'invalid_grant',
       error_description: 'Wrong email or password.'
     }
+=======
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
   },
   isAxiosError: true,
   toJSON: [Function]
 }
+<<<<<<< HEAD
 [2020-08-22T16:15:17.240] [ERROR] error - Error: Request failed with status code 403
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
     at IncomingMessage.handleStreamEnd (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
+=======
+[2020-08-21T09:41:21.777] [ERROR] error - Error: Request failed with status code 401
+    at createError (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\adapters\http.js:236:11)
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
@@ -8192,12 +8540,20 @@
   config: {
     url: '/oauth/token',
     method: 'post',
+<<<<<<< HEAD
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"L","scope":"openid"}',
+=======
+    data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+<<<<<<< HEAD
       'Content-Length': 264
+=======
+      'Content-Length': 220
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -8274,7 +8630,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 108,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -8325,7 +8685,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 108,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -8342,7 +8706,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 264\r\n' +
+=======
+      'Content-Length: 220\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -8390,8 +8758,13 @@
       upgrade: false,
       url: '',
       method: null,
+<<<<<<< HEAD
       statusCode: 403,
       statusMessage: 'Forbidden',
+=======
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       client: [TLSSocket],
       _consuming: false,
       _dumped: false,
@@ -8415,7 +8788,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 264,
+=======
+      _requestBodyLength: 220,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -8434,6 +8811,7 @@
     }
   },
   response: {
+<<<<<<< HEAD
     status: 403,
     statusText: 'Forbidden',
     headers: {
@@ -8452,12 +8830,35 @@
       'x-ratelimit-limit': '100',
       'x-ratelimit-remaining': '98',
       'x-ratelimit-reset': '1598139773',
+=======
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Fri, 21 Aug 2020 13:41:20 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '4caf0caf03c59de1',
+      'ot-tracer-traceid': '34ba3b185d0ad56d',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': '54eefa2c447579e01c86d90c',
+      'x-auth0-requestid': 'ed1416a64f5dd6e2e90d',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598017281',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
+<<<<<<< HEAD
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"L","scope":"openid"}',
+=======
+      data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -8495,7 +8896,11 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
         'Content-Length: 264\r\n' +
+=======
+        'Content-Length: 220\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -8519,18 +8924,29 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+<<<<<<< HEAD
     data: {
       error: 'invalid_grant',
       error_description: 'Wrong email or password.'
     }
+=======
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
   },
   isAxiosError: true,
   toJSON: [Function]
 }
+<<<<<<< HEAD
 [2020-08-22T16:16:07.595] [ERROR] error - Error: Request failed with status code 403
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
     at IncomingMessage.handleStreamEnd (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
+=======
+[2020-08-21T10:20:05.495] [ERROR] error - Error: Request failed with status code 401
+    at createError (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\adapters\http.js:236:11)
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
@@ -8538,12 +8954,20 @@
   config: {
     url: '/oauth/token',
     method: 'post',
+<<<<<<< HEAD
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"L","scope":"openid"}',
+=======
+    data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+<<<<<<< HEAD
       'Content-Length': 264
+=======
+      'Content-Length': 220
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -8620,7 +9044,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 162,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -8671,7 +9099,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 162,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -8688,7 +9120,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 264\r\n' +
+=======
+      'Content-Length: 220\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -8736,8 +9172,13 @@
       upgrade: false,
       url: '',
       method: null,
+<<<<<<< HEAD
       statusCode: 403,
       statusMessage: 'Forbidden',
+=======
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       client: [TLSSocket],
       _consuming: false,
       _dumped: false,
@@ -8761,7 +9202,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 264,
+=======
+      _requestBodyLength: 220,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -8780,6 +9225,7 @@
     }
   },
   response: {
+<<<<<<< HEAD
     status: 403,
     statusText: 'Forbidden',
     headers: {
@@ -8798,12 +9244,35 @@
       'x-ratelimit-limit': '100',
       'x-ratelimit-remaining': '97',
       'x-ratelimit-reset': '1598140637',
+=======
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Fri, 21 Aug 2020 14:20:04 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '1f8b57ad67d4e7c2',
+      'ot-tracer-traceid': '2485bf42695b960d',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': '2c592568a7c76f28390c84c8',
+      'x-auth0-requestid': 'b866e7f4ddcf01fce7b3',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598019605',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
+<<<<<<< HEAD
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"L","scope":"openid"}',
+=======
+      data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -8841,7 +9310,11 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
         'Content-Length: 264\r\n' +
+=======
+        'Content-Length: 220\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -8865,18 +9338,29 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+<<<<<<< HEAD
     data: {
       error: 'invalid_grant',
       error_description: 'Wrong email or password.'
     }
+=======
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
   },
   isAxiosError: true,
   toJSON: [Function]
 }
+<<<<<<< HEAD
 [2020-08-22T16:57:37.521] [ERROR] error - Error: Request failed with status code 403
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
     at IncomingMessage.handleStreamEnd (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
+=======
+[2020-08-21T10:21:28.129] [ERROR] error - Error: Request failed with status code 401
+    at createError (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\adapters\http.js:236:11)
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
@@ -8884,12 +9368,20 @@
   config: {
     url: '/oauth/token',
     method: 'post',
+<<<<<<< HEAD
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cec","password":"l","scope":"openid"}',
+=======
+    data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+<<<<<<< HEAD
       'Content-Length': 247
+=======
+      'Content-Length': 220
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -8966,7 +9458,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 54,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -9017,7 +9513,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 54,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -9034,7 +9534,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 247\r\n' +
+=======
+      'Content-Length: 220\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -9082,8 +9586,13 @@
       upgrade: false,
       url: '',
       method: null,
+<<<<<<< HEAD
       statusCode: 403,
       statusMessage: 'Forbidden',
+=======
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       client: [TLSSocket],
       _consuming: false,
       _dumped: false,
@@ -9107,7 +9616,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 247,
+=======
+      _requestBodyLength: 220,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -9126,6 +9639,7 @@
     }
   },
   response: {
+<<<<<<< HEAD
     status: 403,
     statusText: 'Forbidden',
     headers: {
@@ -9144,12 +9658,35 @@
       'x-ratelimit-limit': '100',
       'x-ratelimit-remaining': '99',
       'x-ratelimit-reset': '1598141522',
+=======
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Fri, 21 Aug 2020 14:21:27 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '5d91a2e968199906',
+      'ot-tracer-traceid': '732de0b169a11872',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': 'ea908850a6dee3ba7b2059b0',
+      'x-auth0-requestid': '1e2738674cacdb31f1ed',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598019688',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
+<<<<<<< HEAD
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cec","password":"l","scope":"openid"}',
+=======
+      data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"c1szgbRWhfClEA5PVlyxWWUs2l63XzRE0iAJ8--l1ScHr7sKyEgh0gstuNx2nCIH","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -9187,7 +9724,11 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
         'Content-Length: 247\r\n' +
+=======
+        'Content-Length: 220\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -9211,18 +9752,29 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+<<<<<<< HEAD
     data: {
       error: 'invalid_grant',
       error_description: 'Wrong email or password.'
     }
+=======
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
   },
   isAxiosError: true,
   toJSON: [Function]
 }
+<<<<<<< HEAD
 [2020-08-24T07:47:44.988] [ERROR] error - Error: Request failed with status code 403
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
     at IncomingMessage.handleStreamEnd (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
+=======
+[2020-08-21T15:54:49.530] [ERROR] error - Error: Request failed with status code 401
+    at createError (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\chris\Documents\Revature\Project-3-userservice\node_modules\axios\lib\adapters\http.js:236:11)
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
@@ -9230,12 +9782,20 @@
   config: {
     url: '/oauth/token',
     method: 'post',
+<<<<<<< HEAD
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+    data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+<<<<<<< HEAD
       'Content-Length': 271
+=======
+      'Content-Length': 90
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -9312,7 +9872,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 54,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -9363,7 +9927,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 54,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -9380,7 +9948,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 271\r\n' +
+=======
+      'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -9428,8 +10000,13 @@
       upgrade: false,
       url: '',
       method: null,
+<<<<<<< HEAD
       statusCode: 403,
       statusMessage: 'Forbidden',
+=======
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       client: [TLSSocket],
       _consuming: false,
       _dumped: false,
@@ -9453,7 +10030,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 271,
+=======
+      _requestBodyLength: 90,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -9472,6 +10053,7 @@
     }
   },
   response: {
+<<<<<<< HEAD
     status: 403,
     statusText: 'Forbidden',
     headers: {
@@ -9490,12 +10072,35 @@
       'x-ratelimit-limit': '100',
       'x-ratelimit-remaining': '99',
       'x-ratelimit-reset': '1598281329',
+=======
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Fri, 21 Aug 2020 19:54:48 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '64f34e183ca75b9f',
+      'ot-tracer-traceid': '7a44b4aa2891d61c',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': 'dd06d2b5646f0474e04cbc96',
+      'x-auth0-requestid': '8d0ef4800e87c5cc0f77',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598039689',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
+<<<<<<< HEAD
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+      data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -9533,7 +10138,11 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
         'Content-Length: 271\r\n' +
+=======
+        'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -9557,14 +10166,19 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+<<<<<<< HEAD
     data: {
       error: 'invalid_grant',
       error_description: 'Wrong email or password.'
     }
+=======
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
   },
   isAxiosError: true,
   toJSON: [Function]
 }
+<<<<<<< HEAD
 [2020-08-24T07:48:19.799] [ERROR] error - Error: Request failed with status code 403
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
@@ -9572,16 +10186,33 @@
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
+=======
+[2020-08-22T11:18:24.144] [ERROR] error - Error: Request failed with status code 401
+    at createError (/Users/j.maravilla.mendoza/project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/j.maravilla.mendoza/project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/j.maravilla.mendoza/project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
+    at IncomingMessage.emit (events.js:327:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:483:12)
+    at endReadableNT (_stream_readable.js:1220:12)
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     at processTicksAndRejections (internal/process/task_queues.js:84:21) {
   config: {
     url: '/oauth/token',
     method: 'post',
+<<<<<<< HEAD
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+    data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+<<<<<<< HEAD
       'Content-Length': 271
+=======
+      'Content-Length': 90
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -9658,7 +10289,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 108,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -9709,7 +10344,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 108,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -9726,7 +10365,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 271\r\n' +
+=======
+      'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -9774,8 +10417,13 @@
       upgrade: false,
       url: '',
       method: null,
+<<<<<<< HEAD
       statusCode: 403,
       statusMessage: 'Forbidden',
+=======
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       client: [TLSSocket],
       _consuming: false,
       _dumped: false,
@@ -9799,7 +10447,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 271,
+=======
+      _requestBodyLength: 90,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -9818,6 +10470,7 @@
     }
   },
   response: {
+<<<<<<< HEAD
     status: 403,
     statusText: 'Forbidden',
     headers: {
@@ -9836,12 +10489,35 @@
       'x-ratelimit-limit': '100',
       'x-ratelimit-remaining': '98',
       'x-ratelimit-reset': '1598282193',
+=======
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Sat, 22 Aug 2020 15:18:24 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '7f5db0a232066d08',
+      'ot-tracer-traceid': '00ac7e1f2e256bbe',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': 'e262e7c844001660edd97ce8',
+      'x-auth0-requestid': '9d677d67e7804504a107',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598109505',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
+<<<<<<< HEAD
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+=======
+      data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -9879,7 +10555,11 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
         'Content-Length: 271\r\n' +
+=======
+        'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -9903,14 +10583,19 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+<<<<<<< HEAD
     data: {
       error: 'invalid_grant',
       error_description: 'Wrong email or password.'
     }
+=======
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
   },
   isAxiosError: true,
   toJSON: [Function]
 }
+<<<<<<< HEAD
 [2020-08-24T07:48:41.463] [ERROR] error - Error: Request failed with status code 403
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
@@ -9918,16 +10603,33 @@
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
+=======
+[2020-08-22T11:20:36.868] [ERROR] error - Error: Request failed with status code 401
+    at createError (/Users/j.maravilla.mendoza/project-3/Project-3-userservice/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/j.maravilla.mendoza/project-3/Project-3-userservice/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/j.maravilla.mendoza/project-3/Project-3-userservice/node_modules/axios/lib/adapters/http.js:236:11)
+    at IncomingMessage.emit (events.js:327:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:483:12)
+    at endReadableNT (_stream_readable.js:1220:12)
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     at processTicksAndRejections (internal/process/task_queues.js:84:21) {
   config: {
     url: '/oauth/token',
     method: 'post',
+<<<<<<< HEAD
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"lupita23","scope":"openid"}',
+=======
+    data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
+<<<<<<< HEAD
       'Content-Length': 271
+=======
+      'Content-Length': 90
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -10004,7 +10706,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 162,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -10055,7 +10761,11 @@
       [Symbol(res)]: [TLSWrap],
       [Symbol(verified)]: true,
       [Symbol(pendingSession)]: null,
+<<<<<<< HEAD
       [Symbol(asyncId)]: 162,
+=======
+      [Symbol(asyncId)]: 11,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       [Symbol(kHandle)]: [TLSWrap],
       [Symbol(kSetNoDelay)]: false,
       [Symbol(lastWriteQueueSize)]: 0,
@@ -10072,7 +10782,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 271\r\n' +
+=======
+      'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -10120,8 +10834,13 @@
       upgrade: false,
       url: '',
       method: null,
+<<<<<<< HEAD
       statusCode: 403,
       statusMessage: 'Forbidden',
+=======
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       client: [TLSSocket],
       _consuming: false,
       _dumped: false,
@@ -10145,7 +10864,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 271,
+=======
+      _requestBodyLength: 90,
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -10164,6 +10887,7 @@
     }
   },
   response: {
+<<<<<<< HEAD
     status: 403,
     statusText: 'Forbidden',
     headers: {
@@ -10182,12 +10906,35 @@
       'x-ratelimit-limit': '100',
       'x-ratelimit-remaining': '97',
       'x-ratelimit-reset': '1598283057',
+=======
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Sat, 22 Aug 2020 15:20:36 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '4543eb5a446ae5d6',
+      'ot-tracer-traceid': '61b291507b590f00',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': 'd17e14c8f0f63f0802aa51d0',
+      'x-auth0-requestid': '8e87a8e214b6e14ef678',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598109637',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
+<<<<<<< HEAD
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"lupita23","scope":"openid"}',
+=======
+      data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -10225,7 +10972,11 @@
         'Accept: application/json, text/plain, */*\r\n' +
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
         'Content-Length: 271\r\n' +
+=======
+        'Content-Length: 90\r\n' +
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -10249,6 +11000,7 @@
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype]
     },
+<<<<<<< HEAD
     data: {
       error: 'invalid_grant',
       error_description: 'Wrong email or password.'
@@ -18054,3 +18806,10 @@
     at Object.next (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/index.ts:33:53)
     at fulfilled (/Users/cecilia/Dropbox/Revature/Projects/Project-3/Project-3-userservice/src/index.ts:24:58)
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+=======
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+  },
+  isAxiosError: true,
+  toJSON: [Function]
+}
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298

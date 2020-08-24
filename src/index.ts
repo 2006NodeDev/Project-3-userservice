@@ -1,12 +1,12 @@
 import express, { Request, Response, NextFunction } from 'express'
 import { auth0GetUserServiceToken } from './remote/auth0/get-user-service-token'
 import { auth0UpdatePassword } from './remote/auth0/patch-password'
-import { logger, errorLogger} from './util/loggers';
+import { logger, errorLogger} from './utils/loggers';
 import { auth0UpdateRole } from './remote/auth0/patch-role';
 import { auth0CreateNewUser, User } from './remote/auth0/new-user';
 import { auth0Login } from './remote/auth0/login';
-import swaggerUi from 'swagger-ui-express';
-import * as swaggerDocument from './swagger.json';
+// import swaggerUi from 'swagger-ui-express';
+// import * as swaggerDocument from './swagger.json';
 import bodyParser from 'body-parser';
 import { corsFilter } from './middleware/cors-filter';
 // import { checkJwt } from './middleware/jwt-verification';
@@ -16,7 +16,8 @@ import { userConverter } from './util/userConverter';
 import { roleConverter } from './util/roleConverter';
 import { associateRouter } from './routers/associate-router';
 import { AuthenticationFailureError } from './errors/AuthenticationFailureError';
-import { UserNotFoundError } from './errors/UserNotFoundError'
+import { getEmails } from './service/verifyEmail';
+// import { auth0GetUserByEmail } from './remote/auth0/get-user-email';
 // import { batchRouter } from './routers/batch-router';
 
 
@@ -26,8 +27,16 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 
+// const jwtAuthz = require('express-jwt-authz');
+
+
 app.use(express.json())
 app.use(corsFilter)
+
+//health check! for load balancer and build
+app.get('/health', (req: Request, res: Response) => {
+    res.sendStatus(200)
+})
 
 // const basePath = process.env['AC_BASE_PATH'] || ''
 
@@ -84,9 +93,9 @@ app.patch('/updatePassword', (req:Request, res:Response, next:NextFunction) => {
 })
 
 app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
-    let { userId, role } = req.body;
+    let { currentUserId, email, role } = req.body;
     try {
-        let update = auth0UpdateRole(userId, role);
+        let update = auth0UpdateRole(currentUserId, email, role);
         res.json(update);
     } catch (error) {
         logger.error(error);
@@ -94,26 +103,35 @@ app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
 })
 
 app.post('/register' , async (req:Request, res: Response, next: NextFunction) => {
-    let {email, password, user_metadata:{preferredName, lastName}} = req.body  
-    if(!email || !password ){
-        throw new Error('Please fill out all necessary fields')
-    }else {
-    
-        let newUser: User ={
-            email,
-            password,
-            user_metadata:{preferredName, lastName},
-        } 
-        newUser.user_metadata.preferredName = newUser.user_metadata.preferredName
-        newUser.user_metadata.lastName = newUser.user_metadata.lastName
+    let {email, password, user_metadata:{preferredName, lastName}} = req.body
+    try {
+        let verifyEmail = await getEmails(email);
+        logger.debug(`Is email in caliber: ${verifyEmail}`)
+  
+        if(!email || !password ){
+            throw new Error('Please fill out all necessary fields')
+        }else if (verifyEmail === false){
+            throw new Error('You must use an email that is in Caliber.')
+        }else {
+        
+            let newUser: User ={
+                email,
+                password,
+                user_metadata:{preferredName, lastName},
+            } 
+            newUser.user_metadata.preferredName = newUser.user_metadata.preferredName
+            newUser.user_metadata.lastName = newUser.user_metadata.lastName
 
-        try {
-            // newUser, password  inside paranthesis
-            let register = await auth0CreateNewUser(newUser) 
-            res.json(register)
-        } catch (error) {
-            logger.error(error)
+            try {
+                // newUser, password  inside paranthesis
+                let register = await auth0CreateNewUser(newUser) 
+                res.json(register)
+            } catch (error) {
+                logger.error(error)
+            }
         }
+    } catch (error) {
+        logger.error(error)
     }
 })
 
@@ -138,12 +156,15 @@ app.use((err, req, res, next) => {
 
 app.listen(2006, () =>{
     auth0GetUserServiceToken()
-    app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+    // app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
     logger.info('Server has started!')
 } )
+<<<<<<< HEAD
 
 process.on('uncaughtException', err => {
     logger.fatal(`Uncaught Exception: ${err.message} ${err.stack}`)
     errorLogger.fatal(`Uncaught Exception: ${err.message} ${err.stack}`)
     process.exit(1)
 })
+=======
+>>>>>>> fb5fdb2405031737b3650545b840713cabe80298
