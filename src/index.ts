@@ -16,8 +16,6 @@ import { userConverter } from './util/userConverter';
 import { roleConverter } from './util/roleConverter';
 import { associateRouter } from './routers/associate-router';
 import { getEmails } from './service/verifyEmail';
-// import { batchRouter } from './routers/batch-router';
-
 
 const app = express()
 app.use(bodyParser.json())
