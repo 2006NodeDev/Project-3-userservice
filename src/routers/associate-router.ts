@@ -137,21 +137,11 @@ associateRouter.get('/batch/:associateEmail', async (req: Request, res: Response
     }
 })
 
-associateRouter.get('/batch/:associateEmail', async (req: Request, res: Response, next: NextFunction) => {
-    let { associateEmail } = req.params;
-    try {
-        let batches = await getBatchByAssociatesEmail(associateEmail)
-        res.json(batches)
-    } catch (e) {
-        next(e)
-    }
-})
-
 associateRouter.get('/batch/current/:trainerEmail', async (req: Request, res: Response, next: NextFunction) => {
     let { trainerEmail } = req.params;
     try {
-        let batches = await getAssociatesInTrainersCurrentBatch(trainerEmail)
-        res.json(batches)
+        let associates = await getAssociatesInTrainersCurrentBatch(trainerEmail)
+        res.json(associates)
     } catch (e) {
         next(e)
     }
