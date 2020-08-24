@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["node"],
+    "types": ["node", "jest"],
     "outDir": "build/dist",
     "module": "commonjs",
     "target": "es5",
@@ -23,12 +23,12 @@
   "exclude": [
     "node_modules",
     "build",
+    "coverage",
     "scripts",
     "styleguide.config.js",
     "docs",
     "acceptance-tests",
     "webpack",
-    "jest",
     "src/**/*.test.ts"
   ]
 }

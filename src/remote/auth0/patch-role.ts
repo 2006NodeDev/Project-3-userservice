@@ -1,5 +1,5 @@
 // import axios from 'axios';
-import { logger } from "../../util/loggers";
+import { logger } from "../../utils/loggers";
 import { auth0BaseClient } from '.';
 // import { auth0GetRole } from './get-user-role';
 

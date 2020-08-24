@@ -1,13 +1,13 @@
 import express, { Request, Response, NextFunction } from 'express'
 import { auth0GetUserServiceToken } from './remote/auth0/get-user-service-token'
 import { auth0UpdatePassword } from './remote/auth0/patch-password'
-import { logger} from './util/loggers';
+import { logger} from './utils/loggers';
 import { auth0UpdateRole } from './remote/auth0/patch-role';
 import { auth0CreateNewUser, User } from './remote/auth0/new-user';
 import { auth0Login } from './remote/auth0/login';
 //import { checkJwt } from './middleware/jwt-verification';
-//import swaggerUi from 'swagger-ui-express';
-//import * as swaggerDocument from './swagger.json';
+// import swaggerUi from 'swagger-ui-express';
+// import * as swaggerDocument from './swagger.json';
 import { corsFilter } from './middleware/cors-filter';
 import { associateRouter } from './routers/associate-router';
 // import { batchRouter } from './routers/batch-router';
@@ -19,6 +19,11 @@ const app = express()
 
 app.use(express.json())
 app.use(corsFilter)
+
+//health check! for load balancer and build
+app.get('/health', (req: Request, res: Response) => {
+    res.sendStatus(200)
+})
 
 // const basePath = process.env['AC_BASE_PATH'] || ''
 
