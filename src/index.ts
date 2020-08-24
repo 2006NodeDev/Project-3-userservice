@@ -1,7 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express'
 import { auth0GetUserServiceToken } from './remote/auth0/get-user-service-token'
 import { auth0UpdatePassword } from './remote/auth0/patch-password'
-import { logger} from './util/loggers';
+import { logger, errorLogger} from './util/loggers';
 import { auth0UpdateRole } from './remote/auth0/patch-role';
 import { auth0CreateNewUser, User } from './remote/auth0/new-user';
 import { auth0Login } from './remote/auth0/login';
@@ -15,6 +15,8 @@ import { auth0GetRole } from "./remote/auth0/get-user-role";
 import { userConverter } from './util/userConverter';
 import { roleConverter } from './util/roleConverter';
 import { associateRouter } from './routers/associate-router';
+import { AuthenticationFailureError } from './errors/AuthenticationFailureError';
+import { UserNotFoundError } from './errors/UserNotFoundError'
 // import { batchRouter } from './routers/batch-router';
 
 
@@ -38,7 +40,7 @@ app.post('/login',  async (req:Request, res:Response, next:NextFunction) => {
     let { password } = req.body
 
     if (!username || !password) {
-        logger.error('Bad Credentials')
+        next(new AuthenticationFailureError())
     }
     else {
         try {
@@ -52,7 +54,7 @@ app.post('/login',  async (req:Request, res:Response, next:NextFunction) => {
             let user = userConverter(result)
             res.json(user)
         } catch (e) {
-            logger.error(e)
+            next(e)
         }
     }
 })
@@ -122,15 +124,17 @@ app.use(corsFilter)
 // app.use('/batches', batchRouter);
 app.use('/associates', associateRouter);
 
-// app.use((err, req, res, next) => {
-//     if (err.statusCode){
-//         res.status(err.statusCode).send(err.message)
-//     }else{
-//         console.log(err)
-//         res.status(500).send('Something Went Wrong')
+app.use((err, req, res, next) => {
+    if (err.statusCode){
+        res.status(err.statusCode).send(err.message)
+        logger.error(err)
+    }else{
+        logger.error(err)
+        errorLogger.error(err)
+        res.status(500).send('Something Went Wrong')
 
-//     }
-// })
+    }
+})
 
 app.listen(2006, () =>{
     auth0GetUserServiceToken()
@@ -138,3 +142,8 @@ app.listen(2006, () =>{
     logger.info('Server has started!')
 } )
 
+process.on('uncaughtException', err => {
+    logger.fatal(`Uncaught Exception: ${err.message} ${err.stack}`)
+    errorLogger.fatal(`Uncaught Exception: ${err.message} ${err.stack}`)
+    process.exit(1)
+})

@@ -1,5 +1,6 @@
 import { logger, errorLogger } from "../../util/loggers";
 import { auth0BaseClient } from ".";
+import { UserNotFoundError } from "../../errors/UserNotFoundError";
 require('dotenv').config()
 /*
  * This function gets the Auth0 User Token at login.
@@ -24,11 +25,10 @@ export async function auth0Login(username:string, password:string) {
         // logger.debug(res.data)
         return res.data
     } catch(e) {
-        logger.debug(e)
+        if(e.message == 'Request failed with status code 403') {
+            throw new UserNotFoundError()
+        }
         errorLogger.error(e)
-        logger.info(e.status)
-        let error:any = new Error(e.message) //could be custom error
-        error.status = e.status
-        throw error
+        logger.error(e)
     }
 }
