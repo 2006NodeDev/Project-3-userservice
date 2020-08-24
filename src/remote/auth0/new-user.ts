@@ -1,5 +1,5 @@
 import { auth0BaseClient } from "."
-import { logger, errorLogger } from "../../util/loggers"
+import { logger, errorLogger } from "../../utils/loggers"
 
 
 
