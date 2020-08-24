@@ -159,12 +159,9 @@ app.listen(2006, () =>{
     // app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
     logger.info('Server has started!')
 } )
-<<<<<<< HEAD
 
 process.on('uncaughtException', err => {
     logger.fatal(`Uncaught Exception: ${err.message} ${err.stack}`)
     errorLogger.fatal(`Uncaught Exception: ${err.message} ${err.stack}`)
     process.exit(1)
 })
-=======
->>>>>>> fb5fdb2405031737b3650545b840713cabe80298
