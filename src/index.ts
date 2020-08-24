@@ -177,7 +177,7 @@ basePathRouter.patch('/updateRole', (req:Request, res:Response, next:NextFunctio
     }
 })
 
-basePathRouter.use(corsFilter)
+// basePathRouter.use(corsFilter)
 
 
 // app.use('/batches', batchRouter);
