@@ -1,0 +1,387 @@
+[2020-08-25T11:17:55.275] [ERROR] error - Error: Request failed with status code 401
+    at createError (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\axios\lib\adapters\http.js:236:11)
+    at IncomingMessage.emit (events.js:327:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  config: {
+    url: '/oauth/token',
+    method: 'post',
+    data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.19.2',
+      'Content-Length': 90
+    },
+    baseURL: 'https://revature-net.us.auth0.com',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  request: ClientRequest {
+    _events: [Object: null prototype] {
+      socket: [Function],
+      abort: [Function],
+      aborted: [Function],
+      error: [Function],
+      timeout: [Function],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 6,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: null,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: true,
+      _SNICallback: null,
+      servername: 'revature-net.us.auth0.com',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'revature-net.us.auth0.com',
+      _readableState: [ReadableState],
+      readable: true,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      writable: false,
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(asyncId)]: 12,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    connection: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: true,
+      _SNICallback: null,
+      servername: 'revature-net.us.auth0.com',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'revature-net.us.auth0.com',
+      _readableState: [ReadableState],
+      readable: true,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      writable: false,
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(asyncId)]: 12,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'POST /oauth/token HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/0.19.2\r\n' +
+      'Content-Length: 90\r\n' +
+      'Host: revature-net.us.auth0.com\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _onPendingData: [Function: noopPendingOutput],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object],
+      requests: {},
+      sockets: [Object],
+      freeSockets: {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    insecureHTTPParser: undefined,
+    path: '/oauth/token',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      readable: false,
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      headers: [Object],
+      rawHeaders: [Array],
+      trailers: {},
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular],
+      responseUrl: 'https://revature-net.us.auth0.com/oauth/token',
+      redirects: [],
+      [Symbol(kCapture)]: false
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      writable: true,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _options: [Object],
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 90,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function],
+      _currentRequest: [Circular],
+      _currentUrl: 'https://revature-net.us.auth0.com/oauth/token',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      host: [Array]
+    }
+  },
+  response: {
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: {
+      date: 'Tue, 25 Aug 2020 15:17:55 GMT',
+      'content-type': 'application/json',
+      'content-length': '60',
+      connection: 'close',
+      server: 'nginx',
+      'ot-tracer-spanid': '1f5a855e31a4c0ef',
+      'ot-tracer-traceid': '74fedb0178bac7f7',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': '4e2d26a07fe52c088e754dc2',
+      'x-auth0-requestid': 'a900325340b5cf431eb7',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598368676',
+      'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
+    },
+    config: {
+      url: '/oauth/token',
+      method: 'post',
+      data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+      headers: [Object],
+      baseURL: 'https://revature-net.us.auth0.com',
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      _header: 'POST /oauth/token HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.19.2\r\n' +
+        'Content-Length: 90\r\n' +
+        'Host: revature-net.us.auth0.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      insecureHTTPParser: undefined,
+      path: '/oauth/token',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    data: { error: 'access_denied', error_description: 'Unauthorized' }
+  },
+  isAxiosError: true,
+  toJSON: [Function]
+}
+[2020-08-25T11:24:40.387] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T11:29:26.791] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T11:51:36.148] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
