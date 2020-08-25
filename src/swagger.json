@@ -1,0 +1,227 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version":"1.0.0",
+        "title":"Associate's Companion",
+        "description":"A companion for Revature associates",
+        "license": {
+            "name": "Revature",
+            "url": "http://revature.com"
+        }
+    },
+    "host":"localhost:2006",
+    "basePath": "",
+    "tags": [
+        {
+            "name":"User",
+            "description": "API for User"
+        }
+    ],
+    "schemes":[
+        "http"
+    ],
+    "consumes":[
+        "application/json"
+    ],
+    "produces":[
+        "application/json"
+    ],
+    "paths":{
+        "/register":{
+            "post":{
+                "tags":[
+                    "User"
+                ],
+                "summary": "User can register",
+                "parameters":[
+                    {
+                        "in":"body",
+                        "name":"body",
+                        "description": "New user can register",
+                        "schema":{
+                            "$ref":"#/definitions/register"
+                        }
+                    }
+                ],
+                "produces":[
+                    "application/json"
+                ],
+                "responses": {
+                    "200":{
+                        "description": "OK",
+                        "schema":{
+                            "$ref":"#/definitions/register"
+                        }
+                    },
+                    "400":{
+                        "description": "Bad Credentials"
+                    },
+                    "401":{
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        },
+        "/login":{
+            "post":{
+                "tags":[
+                    "User"
+                ],
+                "summary": "User can login",
+                "parameters":[
+                    {
+                        "in":"body",
+                        "name":"body",
+                        "description": "Users can sign in",
+                        "schema":{
+                            "$ref":"#/definitions/login"
+                        }
+                    }
+                ],
+                "produces":[
+                    "application/json"
+                ],
+                "responses": {
+                    "200":{
+                        "description": "OK",
+                        "schema":{
+                            "$ref":"#/definitions/login"
+                        }
+                    },
+                    "400":{
+                        "description": "Bad Credentials"
+                    }
+                }
+            }
+        },
+        "/updatePassword":{
+            "patch":{
+                "tags":[
+                    "User"
+                ],
+                "summary": "User can change their own password",
+                "parameters":[
+                    {
+                        "in":"body",
+                        "name":"body",
+                        "description": "Users can change their own password",
+                        "schema":{
+                            "$ref":"#/definitions/changePassword"
+                        }
+                    }
+                ],
+                "produces":[
+                    "application/json"
+                ],
+                "responses": {
+                    "200":{
+                        "description": "OK",
+                        "schema":{
+                            "$ref":"#/definitions/updatePassword"
+                        }
+                    },
+                    "401":{
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        },
+        "/updateRole":{
+            "patch":{
+                "tags":[
+                    "User"
+                ],
+                "summary": "Admin can change any user's role",
+                "parameters":[
+                    {
+                        "in":"body",
+                        "name":"body",
+                        "description": "Admins can change user's roles",
+                        "schema":{
+                            "$ref":"#/definitions/updateRole"
+                        }
+                    }
+                ],
+                "produces":[
+                    "application/json"
+                ],
+                "responses": {
+                    "200":{
+                        "description": "OK",
+                        "schema":{
+                            "$ref":"#/definitions/updateRole"
+                        }
+                    },
+                    "401":{
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        },
+        "/logOut":{
+            "get":{
+                "tags":[
+                    "User"
+                ],
+                "summary": "User can logout and end their session",
+                "responses": {
+                    "200":{
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    },
+    "definitions":{
+        "register":{
+            "type":"object",
+            "properties":{
+                "email":{
+                    "type":"string"
+                },
+                "preferedName":{
+                    "type":"string"
+                },
+                "lastName":{
+                    "type":"string"
+                },
+                "password":{
+                    "type":"string"
+                }
+            }
+        },
+        "login":{
+            "type":"object",
+            "properties": {
+                "username":{
+                    "type":"string"
+                },
+                "password":{
+                    "type":"string"
+                }
+            }
+        },
+        "updatePassword":{
+            "type":"object",
+            "properties": {
+                "userId":{
+                    "type":"string"
+                },
+                "password":{
+                    "type":"string"
+                }
+            }
+        },
+        "updateRole":{
+            "type":"object",
+            "properties": {
+                "userId":{
+                    "type":"string"
+                },
+                "role":{
+                    "type":"string"
+                }
+            }
+        }
+    }
+}
