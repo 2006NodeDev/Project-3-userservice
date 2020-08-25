@@ -32,10 +32,12 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.json())
 
+app.use(corsFilter)
+
 const basePath = process.env['AC_BASE_PATH'] || '/user-service'
 const basePathRouter = express.Router();
 app.use(basePath, basePathRouter);
-app.use(corsFilter)
+
 
 //health check! for load balancer and build
 app.get('/health', (req: Request, res: Response) => {

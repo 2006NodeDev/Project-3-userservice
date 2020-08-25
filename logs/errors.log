@@ -2,6 +2,10 @@
     at createError (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/axios/lib/core/createError.js:16:15)
     at settle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/axios/lib/core/settle.js:17:12)
     at IncomingMessage.handleStreamEnd (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/axios/lib/adapters/http.js:236:11)
+[2020-08-25T11:17:55.275] [ERROR] error - Error: Request failed with status code 401
+    at createError (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\axios\lib\adapters\http.js:236:11)
     at IncomingMessage.emit (events.js:327:22)
     at IncomingMessage.EventEmitter.emit (domain.js:482:12)
     at endReadableNT (_stream_readable.js:1221:12)
@@ -10,11 +14,13 @@
     url: '/oauth/token',
     method: 'post',
     data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+    data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
     headers: {
       Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/json',
       'User-Agent': 'axios/0.19.2',
       'Content-Length': 220
+      'Content-Length': 90
     },
     baseURL: 'https://revature-net.us.auth0.com',
     transformRequest: [ [Function: transformRequest] ],
@@ -159,7 +165,11 @@
       'Accept: application/json, text/plain, */*\r\n' +
       'Content-Type: application/json\r\n' +
       'User-Agent: axios/0.19.2\r\n' +
+<<<<<<< HEAD
       'Content-Length: 220\r\n' +
+=======
+      'Content-Length: 90\r\n' +
+>>>>>>> 37700d475470ad5d50b5cded20a9f71a7d6b419c
       'Host: revature-net.us.auth0.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
@@ -232,7 +242,11 @@
       _options: [Object],
       _redirectCount: 0,
       _redirects: [],
+<<<<<<< HEAD
       _requestBodyLength: 220,
+=======
+      _requestBodyLength: 90,
+>>>>>>> 37700d475470ad5d50b5cded20a9f71a7d6b419c
       _requestBodyBuffers: [],
       _onNativeResponse: [Function],
       _currentRequest: [Circular],
@@ -255,6 +269,7 @@
     statusText: 'Unauthorized',
     headers: {
       date: 'Tue, 25 Aug 2020 15:28:48 GMT',
+      date: 'Tue, 25 Aug 2020 15:17:55 GMT',
       'content-type': 'application/json',
       'content-length': '60',
       connection: 'close',
@@ -268,12 +283,22 @@
       'x-ratelimit-limit': '30',
       'x-ratelimit-remaining': '29',
       'x-ratelimit-reset': '1598369329',
+      'ot-tracer-spanid': '1f5a855e31a4c0ef',
+      'ot-tracer-traceid': '74fedb0178bac7f7',
+      'ot-tracer-sampled': 'true',
+      'ot-baggage-auth0-request-id': '4e2d26a07fe52c088e754dc2',
+      'x-auth0-requestid': 'a900325340b5cf431eb7',
+      'set-cookie': [Array],
+      'x-ratelimit-limit': '30',
+      'x-ratelimit-remaining': '29',
+      'x-ratelimit-reset': '1598368676',
       'cache-control': 'private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform'
     },
     config: {
       url: '/oauth/token',
       method: 'post',
       data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"vKEvPQZFL-n26Z11zRG8vO9GZtWVglYtTWnpmiibPV-xZerTZFAfXyldwz2YU1VU","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+      data: '{"audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
       headers: [Object],
       baseURL: 'https://revature-net.us.auth0.com',
       transformRequest: [Array],
@@ -312,6 +337,7 @@
         'Content-Type: application/json\r\n' +
         'User-Agent: axios/0.19.2\r\n' +
         'Content-Length: 220\r\n' +
+        'Content-Length: 90\r\n' +
         'Host: revature-net.us.auth0.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
@@ -351,6 +377,17 @@
     at router (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:47:12)
     at Layer.handle [as handle_request] (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/layer.js:95:5)
     at trim_prefix (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:317:13) {
+[2020-08-25T11:24:40.387] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
   code: 'credentials_required',
   status: 401,
   inner: { message: 'No authorization token was found' }
@@ -366,6 +403,17 @@
     at router (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:47:12)
     at Layer.handle [as handle_request] (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/layer.js:95:5)
     at trim_prefix (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:317:13) {
+[2020-08-25T11:29:26.791] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
   code: 'credentials_required',
   status: 401,
   inner: { message: 'No authorization token was found' }
@@ -546,7 +594,654 @@
     at router (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:47:12)
     at Layer.handle [as handle_request] (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/layer.js:95:5)
     at trim_prefix (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:317:13) {
+[2020-08-25T11:51:36.148] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
   code: 'credentials_required',
   status: 401,
   inner: { message: 'No authorization token was found' }
 }
+[2020-08-25T09:41:31.512] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express-jwt/lib/index.js:79:21)
+    at Layer.handle [as handle_request] (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:317:13)
+    at /Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T09:47:15.258] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express-jwt/lib/index.js:79:21)
+    at Layer.handle [as handle_request] (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:317:13)
+    at /Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T09:55:58.721] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express-jwt/lib/index.js:79:21)
+    at Layer.handle [as handle_request] (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:317:13)
+    at /Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T10:06:16.866] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express-jwt/lib/index.js:79:21)
+    at Layer.handle [as handle_request] (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:317:13)
+    at /Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/node_modules/express/lib/router/index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T10:10:59.995] [ERROR] error - Error: getaddrinfo ENOTFOUND revature-net.us.auth0.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26) {
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'revature-net.us.auth0.com',
+  config: {
+    url: '/oauth/token',
+    method: 'post',
+    data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"MlUKxNw-0WQUic_VyJbMpfxGUYnmxqWe2UmBV1u-aY14T2QuV7EI0ga9OPOhzQDX","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.19.2',
+      'Content-Length': 220
+    },
+    baseURL: 'https://revature-net.us.auth0.com',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  request: Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      bufferedRequest: null,
+      lastBufferedRequest: null,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: false,
+      bufferedRequestCount: 0,
+      corkedRequestsFree: [Object]
+    },
+    writable: true,
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'https:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/oauth/token',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'revature-net.us.auth0.com',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/oauth/token'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 220,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: true,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      _header: 'POST /oauth/token HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.19.2\r\n' +
+        'Content-Length: 220\r\n' +
+        'Host: revature-net.us.auth0.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      insecureHTTPParser: undefined,
+      path: '/oauth/token',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'https://revature-net.us.auth0.com/oauth/token',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function]
+}
+[2020-08-25T10:12:10.087] [ERROR] error - Error: getaddrinfo ENOTFOUND revature-net.us.auth0.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26) {
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'revature-net.us.auth0.com',
+  config: {
+    url: '/oauth/token',
+    method: 'post',
+    data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"MlUKxNw-0WQUic_VyJbMpfxGUYnmxqWe2UmBV1u-aY14T2QuV7EI0ga9OPOhzQDX","audience":"https://revature-net.us.auth0.com/api/v2/","grant_type":"client_credentials"}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.19.2',
+      'Content-Length': 220
+    },
+    baseURL: 'https://revature-net.us.auth0.com',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  request: Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      bufferedRequest: null,
+      lastBufferedRequest: null,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: false,
+      bufferedRequestCount: 0,
+      corkedRequestsFree: [Object]
+    },
+    writable: true,
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'https:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/oauth/token',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'revature-net.us.auth0.com',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/oauth/token'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 220,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: true,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      _header: 'POST /oauth/token HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.19.2\r\n' +
+        'Content-Length: 220\r\n' +
+        'Host: revature-net.us.auth0.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      insecureHTTPParser: undefined,
+      path: '/oauth/token',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'https://revature-net.us.auth0.com/oauth/token',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function]
+}
+[2020-08-25T10:12:38.354] [ERROR] error - Error: getaddrinfo ENOTFOUND revature-net.us.auth0.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26) {
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'revature-net.us.auth0.com',
+  config: {
+    url: '/oauth/token',
+    method: 'post',
+    data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"MlUKxNw-0WQUic_VyJbMpfxGUYnmxqWe2UmBV1u-aY14T2QuV7EI0ga9OPOhzQDX","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.19.2',
+      'Content-Length': 271
+    },
+    baseURL: 'https://revature-net.us.auth0.com',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  request: Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      bufferedRequest: null,
+      lastBufferedRequest: null,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: false,
+      bufferedRequestCount: 0,
+      corkedRequestsFree: [Object]
+    },
+    writable: true,
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'https:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/oauth/token',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'revature-net.us.auth0.com',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/oauth/token'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 271,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: true,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      _header: 'POST /oauth/token HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.19.2\r\n' +
+        'Content-Length: 271\r\n' +
+        'Host: revature-net.us.auth0.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      insecureHTTPParser: undefined,
+      path: '/oauth/token',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'https://revature-net.us.auth0.com/oauth/token',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function]
+}
+[2020-08-25T10:12:38.365] [ERROR] error - TypeError: Cannot read property 'access_token' of undefined
+    at /Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/src/index.ts:63:61
+    at step (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/src/index.ts:33:23)
+    at Object.next (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/src/index.ts:14:53)
+    at fulfilled (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/src/index.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-25T10:13:02.935] [ERROR] error - Error: getaddrinfo ENOTFOUND revature-net.us.auth0.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26) {
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'revature-net.us.auth0.com',
+  config: {
+    url: '/oauth/token',
+    method: 'post',
+    data: '{"client_id":"Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U","client_secret":"MlUKxNw-0WQUic_VyJbMpfxGUYnmxqWe2UmBV1u-aY14T2QuV7EI0ga9OPOhzQDX","audience":"http://companion.revature.net","grant_type":"password","username":"cecmaria23@gmail.com","password":"Lupita23","scope":"openid"}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.19.2',
+      'Content-Length': 271
+    },
+    baseURL: 'https://revature-net.us.auth0.com',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  request: Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      bufferedRequest: null,
+      lastBufferedRequest: null,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: false,
+      bufferedRequestCount: 0,
+      corkedRequestsFree: [Object]
+    },
+    writable: true,
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'https:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/oauth/token',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'revature-net.us.auth0.com',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/oauth/token'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 271,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: true,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      _header: 'POST /oauth/token HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.19.2\r\n' +
+        'Content-Length: 271\r\n' +
+        'Host: revature-net.us.auth0.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      insecureHTTPParser: undefined,
+      path: '/oauth/token',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'https://revature-net.us.auth0.com/oauth/token',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function]
+}
+[2020-08-25T10:13:02.940] [ERROR] error - TypeError: Cannot read property 'access_token' of undefined
+    at /Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/src/index.ts:63:61
+    at step (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/src/index.ts:33:23)
+    at Object.next (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/src/index.ts:14:53)
+    at fulfilled (/Users/cecilia/Dropbox/Revature/Projects/Project-3/user-service/src/index.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)

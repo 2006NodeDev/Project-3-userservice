@@ -1,5 +1,6 @@
 import { auth0BaseClient } from ".";
-import { logger } from "../../loggers";
+import { logger } from "../../utils/loggers";
+
 
 export async function auth0GetRole(id:any):Promise<any>{
 
