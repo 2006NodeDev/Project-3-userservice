@@ -1,6 +1,6 @@
 import { getAllBatches } from "../remote/batch/get-all-batches"
-import { logger } from "../utils/loggers";
 import { UserNotFoundError } from "../errors/UserNotFoundError";
+import { logger } from "../utils/loggers";
 
 export const getEmails = async (email:string) => {
     try {

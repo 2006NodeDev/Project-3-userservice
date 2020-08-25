@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.auth0GetUserToken = void 0;
 var _1 = require(".");
-var loggers_1 = require("../../util/loggers");
+var loggers_1 = require("../../utils/loggers");
 require('dotenv').config();
 /*
  * This function gets the Auth0 User Token.
