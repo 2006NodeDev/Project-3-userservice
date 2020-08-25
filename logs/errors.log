@@ -385,3 +385,1953 @@
   status: 401,
   inner: { message: 'No authorization token was found' }
 }
+[2020-08-25T13:53:10.660] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T13:54:55.195] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:27:37.462] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:29:18.984] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:31:52.315] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:10.565] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:10.636] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:10.708] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:10.771] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:10.837] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:10.906] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:10.973] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.069] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.080] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.155] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.189] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.307] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.383] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.430] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.501] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.510] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.571] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.621] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.752] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:11.791] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:13.624] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:13.654] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:13.684] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.300] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.333] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.370] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.404] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.443] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.503] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.562] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.589] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.651] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.687] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.735] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.820] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:14.856] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:15.158] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:15.185] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:15.218] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T14:56:17.042] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.230] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.371] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.410] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.499] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.549] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.578] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.594] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.647] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.675] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.721] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.782] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.804] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.892] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.933] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.971] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:48.997] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:49.006] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:49.035] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:49.123] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:49.172] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:49.238] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:49.795] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:51.805] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:51.871] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:51.930] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:51.952] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:51.966] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:51.987] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.183] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.207] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.213] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.222] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.228] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.329] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.419] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.492] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.510] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.597] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.627] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.634] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.659] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:07:52.668] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.200] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.205] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.232] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.240] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.282] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.296] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.334] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.357] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.416] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.424] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.450] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.496] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.507] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.546] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.555] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.590] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.677] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.699] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.707] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.750] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:56.781] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:58.612] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:58.620] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:58.640] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:58.679] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:58.701] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:58.708] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:58.752] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:58.787] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:58.799] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:58.858] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:58.979] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:59.088] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:59.122] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:59.187] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:59.205] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:59.283] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:59.331] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:59.340] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:59.381] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:59.460] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:08:59.520] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}
+[2020-08-25T15:14:47.428] [ERROR] error - UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express-jwt\lib\index.js:79:21)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\LiteraryGamerGirlT\Project-3-userservice\node_modules\express\lib\router\index.js:317:13) {
+  code: 'credentials_required',
+  status: 401,
+  inner: { message: 'No authorization token was found' }
+}

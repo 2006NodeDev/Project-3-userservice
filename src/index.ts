@@ -9,7 +9,7 @@ import { auth0Login } from './remote/auth0/login';
 // import * as swaggerDocument from './swagger.json';
 import bodyParser from 'body-parser';
 import { corsFilter } from './middleware/cors-filter';
-import { checkJwt } from './middleware/jwt-verification';
+// import { checkJwt } from './middleware/jwt-verification';
 import jwt_decode from "jwt-decode";
 import { auth0GetRole } from "./remote/auth0/get-user-role";
 import { userConverter } from './util/userConverter';
@@ -37,6 +37,8 @@ app.use(corsFilter)
 const basePath = process.env['AC_BASE_PATH'] || '/user-service'
 const basePathRouter = express.Router();
 app.use(basePath, basePathRouter);
+// basePathRouter.use(checkJwt);
+basePathRouter.use('/associates', associateRouter);
 
 
 //health check! for load balancer and build
@@ -74,7 +76,6 @@ basePathRouter.post('/login',  async (req:Request, res:Response, next:NextFuncti
     }
 })
 
-// app.use(checkJwt);
 
 app.get('/getRole/:id', async (req:Request, res:Response, next:NextFunction) =>{
     try {
@@ -142,8 +143,6 @@ app.post('/register' , async (req:Request, res: Response, next: NextFunction) =>
     }
 })
 
-basePathRouter.use(checkJwt);
-
 basePathRouter.get('/getRole/:id', async (req:Request, res:Response, next:NextFunction) =>{
     try {
         let { id } = req.params
@@ -183,7 +182,6 @@ basePathRouter.patch('/updateRole', (req:Request, res:Response, next:NextFunctio
 
 
 // app.use('/batches', batchRouter);
-basePathRouter.use('/associates', associateRouter);
 
 app.use((err, req, res, next) => {
     if (err.statusCode){
