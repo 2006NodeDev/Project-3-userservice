@@ -36,54 +36,36 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.auth0Login = void 0;
-var loggers_1 = require("../../utils/loggers");
+exports.auth0GetUserByEmail = void 0;
 var _1 = require(".");
-var UserNotFoundError_1 = require("../../errors/UserNotFoundError");
-require('dotenv').config();
-/*
- * This function gets the Auth0 User Token at login.
- * The request body contains the specific properties of
- * our Auth0 API. The response returns an access
- * token for a user in Auth0.
- * Env variables should be stored in a .env file inside
- * of the project folder.
- */
-function auth0Login(username, password) {
+var loggers_1 = require("../../utils/loggers");
+function auth0GetUserByEmail(email) {
     return __awaiter(this, void 0, void 0, function () {
-        var body, res, e_1;
+        var result, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 2, , 3]);
-                    body = {
-                        client_id: process.env['AUTH0_CLIENT_ID'],
-                        client_secret: process.env['AUTH0_CLIENT_SECRET'],
-                        audience: 'http://companion.revature.net',
-                        grant_type: 'password',
-                        username: username,
-                        password: password,
-                        scope: "openid"
-                    };
-                    return [4 /*yield*/, _1.auth0BaseClient.post('/oauth/token', body)
-                        // logger.debug(res.data)
-                    ];
+                    return [4 /*yield*/, _1.auth0BaseClient.get("/api/v2/users-by-email?email=" + email)];
                 case 1:
-                    res = _a.sent();
-                    // logger.debug(res.data)
-                    return [2 /*return*/, res.data];
-                case 2:
-                    e_1 = _a.sent();
-                    if (e_1.message == 'Request failed with status code 403') {
-                        throw new UserNotFoundError_1.UserNotFoundError();
+                    result = _a.sent();
+                    loggers_1.logger.debug(result.data[0]);
+                    if (result.data[0]) {
+                        loggers_1.logger.debug("User ID: " + result.data[0].identities[0].user_id);
+                        return [2 /*return*/, result.data[0].identities[0].user_id];
                     }
-                    loggers_1.errorLogger.error(e_1);
-                    loggers_1.logger.error(e_1);
+                    else {
+                        return [2 /*return*/, 'None'];
+                    }
                     return [3 /*break*/, 3];
+                case 2:
+                    error_1 = _a.sent();
+                    loggers_1.logger.error(error_1);
+                    throw new Error(error_1);
                 case 3: return [2 /*return*/];
             }
         });
     });
 }
-exports.auth0Login = auth0Login;
-//# sourceMappingURL=login.js.map
+exports.auth0GetUserByEmail = auth0GetUserByEmail;
+//# sourceMappingURL=get-user-email.js.map

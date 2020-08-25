@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.auth0UpdatePassword = void 0;
 // import axios from 'axios';
-var loggers_1 = require("../../util/loggers");
+var loggers_1 = require("../../utils/loggers");
 var _1 = require(".");
 function auth0UpdatePassword(id, password) {
     return __awaiter(this, void 0, void 0, function () {

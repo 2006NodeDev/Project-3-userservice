@@ -1,23 +1,4 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -61,46 +42,93 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var get_user_service_token_1 = require("./remote/auth0/get-user-service-token");
 var patch_password_1 = require("./remote/auth0/patch-password");
-var loggers_1 = require("./util/loggers");
+var loggers_1 = require("./utils/loggers");
 var patch_role_1 = require("./remote/auth0/patch-role");
 var new_user_1 = require("./remote/auth0/new-user");
 var login_1 = require("./remote/auth0/login");
-//import { checkJwt } from './middleware/jwt-verification';
-var swagger_ui_express_1 = __importDefault(require("swagger-ui-express"));
-var swaggerDocument = __importStar(require("./swagger.json"));
+// import swaggerUi from 'swagger-ui-express';
+// import * as swaggerDocument from './swagger.json';
+var body_parser_1 = __importDefault(require("body-parser"));
 var cors_filter_1 = require("./middleware/cors-filter");
+var jwt_verification_1 = require("./middleware/jwt-verification");
+var jwt_decode_1 = __importDefault(require("jwt-decode"));
+var get_user_role_1 = require("./remote/auth0/get-user-role");
+var userConverter_1 = require("./util/userConverter");
+var roleConverter_1 = require("./util/roleConverter");
 var associate_router_1 = require("./routers/associate-router");
+var AuthenticationFailureError_1 = require("./errors/AuthenticationFailureError");
+var verifyEmail_1 = require("./service/verifyEmail");
+// import { auth0GetUserByEmail } from './remote/auth0/get-user-email';
 // import { batchRouter } from './routers/batch-router';
 var app = express_1.default();
+app.use(body_parser_1.default.json());
+app.use(body_parser_1.default.urlencoded({
+    extended: true
+}));
 // const jwtAuthz = require('express-jwt-authz');
 app.use(express_1.default.json());
 app.use(cors_filter_1.corsFilter);
+var basePath = process.env['AC_BASE_PATH'] || '/user-service';
+var basePathRouter = express_1.default.Router();
+app.use(basePath, basePathRouter);
+//health check! for load balancer and build
+app.get('/health', function (req, res) {
+    res.sendStatus(200);
+});
 // const basePath = process.env['AC_BASE_PATH'] || ''
 //For a route that needs authentication: include 'checkJwt' in the path
 //For a route that needs permissions(scopes): include 'checkJwt, jwtAuthz([ 'read:messages' ])' to the path, similar to the roles array we used before
-app.post('/login', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
-    var username, password, userToken, e_1;
+basePathRouter.post('/login', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+    var username, password, userToken, result, user, e_1;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
                 username = req.body.username;
                 password = req.body.password;
                 if (!(!username || !password)) return [3 /*break*/, 1];
-                loggers_1.logger.error('Bad Credentials');
+                next(new AuthenticationFailureError_1.AuthenticationFailureError());
                 return [3 /*break*/, 4];
             case 1:
                 _a.trys.push([1, 3, , 4]);
                 return [4 /*yield*/, login_1.auth0Login(username, password)];
             case 2:
                 userToken = _a.sent();
-                res.header('Authorization', "Bearer " + userToken);
-                res.json(userToken);
+                res.header('Authorization', "Bearer " + userToken.access_token);
+                // let user = await auth0GetUser(userToken);
+                // logger.debug(`the getUser result: ${user}`);
+                loggers_1.logger.debug(userToken.scopes);
+                result = jwt_decode_1.default(userToken.id_token);
+                loggers_1.logger.debug(result);
+                user = userConverter_1.userConverter(result);
+                res.json(user);
                 return [3 /*break*/, 4];
             case 3:
                 e_1 = _a.sent();
-                loggers_1.logger.error(e_1);
+                next(e_1);
                 return [3 /*break*/, 4];
             case 4: return [2 /*return*/];
+        }
+    });
+}); });
+// app.use(checkJwt);
+app.get('/getRole/:id', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+    var id, result, role, error_1;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                _a.trys.push([0, 2, , 3]);
+                id = req.params.id;
+                return [4 /*yield*/, get_user_role_1.auth0GetRole(id)];
+            case 1:
+                result = _a.sent();
+                role = roleConverter_1.roleConverter(result);
+                res.json(role);
+                return [3 /*break*/, 3];
+            case 2:
+                error_1 = _a.sent();
+                loggers_1.logger.error(error_1);
+                return [3 /*break*/, 3];
+            case 3: return [2 /*return*/];
         }
     });
 }); });
@@ -111,13 +139,14 @@ app.patch('/updatePassword', function (req, res, next) {
         res.json(update);
     }
     catch (error) {
+        loggers_1.logger.error('unable to update password');
         loggers_1.logger.error(error);
     }
 });
 app.patch('/updateRole', function (req, res, next) {
-    var _a = req.body, userId = _a.userId, role = _a.role;
+    var _a = req.body, currentUserId = _a.currentUserId, email = _a.email, role = _a.role;
     try {
-        var update = patch_role_1.auth0UpdateRole(userId, role);
+        var update = patch_role_1.auth0UpdateRole(currentUserId, email, role);
         res.json(update);
     }
     catch (error) {
@@ -125,14 +154,24 @@ app.patch('/updateRole', function (req, res, next) {
     }
 });
 app.post('/register', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
-    var _a, email, password, _b, preferredName, lastName, newUser, register, error_1;
+    var _a, email, password, _b, preferredName, lastName, verifyEmail, newUser, register, error_2, error_3;
     return __generator(this, function (_c) {
         switch (_c.label) {
             case 0:
                 _a = req.body, email = _a.email, password = _a.password, _b = _a.user_metadata, preferredName = _b.preferredName, lastName = _b.lastName;
-                if (!(!email || !password)) return [3 /*break*/, 1];
-                throw new Error('Please fill out all necessary fields');
+                _c.label = 1;
             case 1:
+                _c.trys.push([1, 9, , 10]);
+                return [4 /*yield*/, verifyEmail_1.getEmails(email)];
+            case 2:
+                verifyEmail = _c.sent();
+                loggers_1.logger.debug("Is email in caliber: " + verifyEmail);
+                if (!(!email || !password)) return [3 /*break*/, 3];
+                throw new Error('Please fill out all necessary fields');
+            case 3:
+                if (!(verifyEmail === false)) return [3 /*break*/, 4];
+                throw new Error('You must use an email that is in Caliber.');
+            case 4:
                 newUser = {
                     email: email,
                     password: password,
@@ -140,37 +179,99 @@ app.post('/register', function (req, res, next) { return __awaiter(void 0, void 
                 };
                 newUser.user_metadata.preferredName = newUser.user_metadata.preferredName;
                 newUser.user_metadata.lastName = newUser.user_metadata.lastName;
-                _c.label = 2;
-            case 2:
-                _c.trys.push([2, 4, , 5]);
+                _c.label = 5;
+            case 5:
+                _c.trys.push([5, 7, , 8]);
                 return [4 /*yield*/, new_user_1.auth0CreateNewUser(newUser)];
-            case 3:
+            case 6:
                 register = _c.sent();
                 res.json(register);
-                return [3 /*break*/, 5];
-            case 4:
-                error_1 = _c.sent();
-                loggers_1.logger.error(error_1);
-                return [3 /*break*/, 5];
-            case 5: return [2 /*return*/];
+                return [3 /*break*/, 8];
+            case 7:
+                error_2 = _c.sent();
+                loggers_1.logger.error(error_2);
+                return [3 /*break*/, 8];
+            case 8: return [3 /*break*/, 10];
+            case 9:
+                error_3 = _c.sent();
+                loggers_1.logger.error(error_3);
+                next(error_3);
+                return [3 /*break*/, 10];
+            case 10: return [2 /*return*/];
         }
     });
 }); });
-app.use(cors_filter_1.corsFilter);
+basePathRouter.use(jwt_verification_1.checkJwt);
+basePathRouter.get('/getRole/:id', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+    var id, result, role, error_4;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                _a.trys.push([0, 2, , 3]);
+                id = req.params.id;
+                return [4 /*yield*/, get_user_role_1.auth0GetRole(id)];
+            case 1:
+                result = _a.sent();
+                role = roleConverter_1.roleConverter(result);
+                res.json(role);
+                return [3 /*break*/, 3];
+            case 2:
+                error_4 = _a.sent();
+                loggers_1.logger.error(error_4);
+                next(error_4);
+                return [3 /*break*/, 3];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); });
+basePathRouter.patch('/updatePassword', function (req, res, next) {
+    var _a = req.body, userId = _a.userId, password = _a.password;
+    try {
+        var update = patch_password_1.auth0UpdatePassword(userId, password);
+        res.json(update);
+    }
+    catch (error) {
+        loggers_1.logger.error('unable to update password');
+        loggers_1.logger.error(error);
+        next(error);
+    }
+});
+basePathRouter.patch('/updateRole', function (req, res, next) {
+    var _a = req.body, currentUserId = _a.currentUserId, userId = _a.userId, role = _a.role;
+    try {
+        var update = patch_role_1.auth0UpdateRole(currentUserId, userId, role);
+        res.json(update);
+    }
+    catch (error) {
+        loggers_1.logger.error(error);
+        next(error);
+    }
+});
+// basePathRouter.use(corsFilter)
 // app.use('/batches', batchRouter);
-app.use('/associates', associate_router_1.associateRouter);
+basePathRouter.use('/associates', associate_router_1.associateRouter);
 app.use(function (err, req, res, next) {
     if (err.statusCode) {
         res.status(err.statusCode).send(err.message);
+        loggers_1.logger.error(err);
     }
     else {
-        console.log(err);
+        loggers_1.logger.error(err);
+        loggers_1.errorLogger.error(err);
         res.status(500).send('Something Went Wrong');
     }
 });
+// app.get('/health', (req:Request, res:Response)=>{
+//     res.sendStatus(200);
+// })
 app.listen(2006, function () {
     get_user_service_token_1.auth0GetUserServiceToken();
-    app.use('/swagger', swagger_ui_express_1.default.serve, swagger_ui_express_1.default.setup(swaggerDocument));
+    // app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
     loggers_1.logger.info('Server has started!');
+});
+process.on('uncaughtException', function (err) {
+    loggers_1.logger.fatal("Uncaught Exception: " + err.message + " " + err.stack);
+    loggers_1.errorLogger.fatal("Uncaught Exception: " + err.message + " " + err.stack);
+    process.exit(1);
 });
 //# sourceMappingURL=index.js.map

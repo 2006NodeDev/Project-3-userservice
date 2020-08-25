@@ -36,54 +36,35 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.auth0Login = void 0;
-var loggers_1 = require("../../utils/loggers");
-var _1 = require(".");
-var UserNotFoundError_1 = require("../../errors/UserNotFoundError");
-require('dotenv').config();
-/*
- * This function gets the Auth0 User Token at login.
- * The request body contains the specific properties of
- * our Auth0 API. The response returns an access
- * token for a user in Auth0.
- * Env variables should be stored in a .env file inside
- * of the project folder.
- */
-function auth0Login(username, password) {
-    return __awaiter(this, void 0, void 0, function () {
-        var body, res, e_1;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    _a.trys.push([0, 2, , 3]);
-                    body = {
-                        client_id: process.env['AUTH0_CLIENT_ID'],
-                        client_secret: process.env['AUTH0_CLIENT_SECRET'],
-                        audience: 'http://companion.revature.net',
-                        grant_type: 'password',
-                        username: username,
-                        password: password,
-                        scope: "openid"
-                    };
-                    return [4 /*yield*/, _1.auth0BaseClient.post('/oauth/token', body)
-                        // logger.debug(res.data)
-                    ];
-                case 1:
-                    res = _a.sent();
-                    // logger.debug(res.data)
-                    return [2 /*return*/, res.data];
-                case 2:
-                    e_1 = _a.sent();
-                    if (e_1.message == 'Request failed with status code 403') {
-                        throw new UserNotFoundError_1.UserNotFoundError();
-                    }
-                    loggers_1.errorLogger.error(e_1);
-                    loggers_1.logger.error(e_1);
-                    return [3 /*break*/, 3];
-                case 3: return [2 /*return*/];
-            }
-        });
+exports.getCurrentBatchesFromTrainerBatches = void 0;
+var get_batch_by_batch_id_1 = require("./get-batch-by-batch-id");
+exports.getCurrentBatchesFromTrainerBatches = function (allBatches) { return __awaiter(void 0, void 0, void 0, function () {
+    var res, batch, batchEnd, _a, _b, _i, i;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _a = [];
+                for (_b in allBatches)
+                    _a.push(_b);
+                _i = 0;
+                _c.label = 1;
+            case 1:
+                if (!(_i < _a.length)) return [3 /*break*/, 4];
+                i = _a[_i];
+                return [4 /*yield*/, get_batch_by_batch_id_1.getBatchByBatchId(allBatches[i])];
+            case 2:
+                batch = _c.sent();
+                batchEnd = new Date(batch.endDate);
+                if (batchEnd >= Date.now()) {
+                    res = batch.batchId;
+                    console.log(res);
+                }
+                _c.label = 3;
+            case 3:
+                _i++;
+                return [3 /*break*/, 1];
+            case 4: return [2 /*return*/, res];
+        }
     });
-}
-exports.auth0Login = auth0Login;
-//# sourceMappingURL=login.js.map
+}); };
+//# sourceMappingURL=get-current-batch-from-trainer-batches.js.map
