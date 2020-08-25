@@ -36,54 +36,32 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.auth0Login = void 0;
-var loggers_1 = require("../../utils/loggers");
-var _1 = require(".");
-var UserNotFoundError_1 = require("../../errors/UserNotFoundError");
-require('dotenv').config();
-/*
- * This function gets the Auth0 User Token at login.
- * The request body contains the specific properties of
- * our Auth0 API. The response returns an access
- * token for a user in Auth0.
- * Env variables should be stored in a .env file inside
- * of the project folder.
- */
-function auth0Login(username, password) {
-    return __awaiter(this, void 0, void 0, function () {
-        var body, res, e_1;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    _a.trys.push([0, 2, , 3]);
-                    body = {
-                        client_id: process.env['AUTH0_CLIENT_ID'],
-                        client_secret: process.env['AUTH0_CLIENT_SECRET'],
-                        audience: 'http://companion.revature.net',
-                        grant_type: 'password',
-                        username: username,
-                        password: password,
-                        scope: "openid"
-                    };
-                    return [4 /*yield*/, _1.auth0BaseClient.post('/oauth/token', body)
-                        // logger.debug(res.data)
-                    ];
-                case 1:
-                    res = _a.sent();
-                    // logger.debug(res.data)
-                    return [2 /*return*/, res.data];
-                case 2:
-                    e_1 = _a.sent();
-                    if (e_1.message == 'Request failed with status code 403') {
-                        throw new UserNotFoundError_1.UserNotFoundError();
-                    }
-                    loggers_1.errorLogger.error(e_1);
-                    loggers_1.logger.error(e_1);
-                    return [3 /*break*/, 3];
-                case 3: return [2 /*return*/];
-            }
-        });
+exports.getEmails = void 0;
+var get_all_batches_1 = require("../remote/batch/get-all-batches");
+var UserNotFoundError_1 = require("../errors/UserNotFoundError");
+var loggers_1 = require("../utils/loggers");
+exports.getEmails = function (email) { return __awaiter(void 0, void 0, void 0, function () {
+    var batches, allEmails_1, i, error_1;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                _a.trys.push([0, 2, , 3]);
+                return [4 /*yield*/, get_all_batches_1.getAllBatches()];
+            case 1:
+                batches = _a.sent();
+                allEmails_1 = [];
+                for (i = 0; i < batches.length; i++) {
+                    batches[i].associateAssignments.forEach(function (item, key) {
+                        allEmails_1.push(item.associate.email);
+                    });
+                }
+                return [2 /*return*/, allEmails_1.includes(email)];
+            case 2:
+                error_1 = _a.sent();
+                loggers_1.logger.error(error_1);
+                throw new UserNotFoundError_1.UserNotFoundError();
+            case 3: return [2 /*return*/];
+        }
     });
-}
-exports.auth0Login = auth0Login;
-//# sourceMappingURL=login.js.map
+}); };
+//# sourceMappingURL=verifyEmail.js.map

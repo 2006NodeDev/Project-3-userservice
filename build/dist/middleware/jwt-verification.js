@@ -1,11 +1,11 @@
 "use strict";
-// Authentication middleware. When used, the
-// Access Token must exist and be verified against
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.checkJwt = void 0;
+// Authentication middleware. When used, the
+// Access Token must exist and be verified against
 var express_jwt_1 = __importDefault(require("express-jwt"));
 var jwks_rsa_1 = __importDefault(require("jwks-rsa"));
 // the Auth0 JSON Web Key Set
@@ -22,6 +22,6 @@ exports.checkJwt = express_jwt_1.default({
     // Validate the audience and the issuer.
     audience: 'http://companion.revature.net',
     issuer: "https://revature-net.us.auth0.com/",
-    algorithms: ['RS256']
+    algorithms: ['RS256'],
 });
 //# sourceMappingURL=jwt-verification.js.map

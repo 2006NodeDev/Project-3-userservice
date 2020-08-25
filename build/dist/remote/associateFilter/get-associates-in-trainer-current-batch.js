@@ -36,54 +36,40 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.auth0Login = void 0;
-var loggers_1 = require("../../utils/loggers");
-var _1 = require(".");
-var UserNotFoundError_1 = require("../../errors/UserNotFoundError");
-require('dotenv').config();
-/*
- * This function gets the Auth0 User Token at login.
- * The request body contains the specific properties of
- * our Auth0 API. The response returns an access
- * token for a user in Auth0.
- * Env variables should be stored in a .env file inside
- * of the project folder.
- */
-function auth0Login(username, password) {
-    return __awaiter(this, void 0, void 0, function () {
-        var body, res, e_1;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    _a.trys.push([0, 2, , 3]);
-                    body = {
-                        client_id: process.env['AUTH0_CLIENT_ID'],
-                        client_secret: process.env['AUTH0_CLIENT_SECRET'],
-                        audience: 'http://companion.revature.net',
-                        grant_type: 'password',
-                        username: username,
-                        password: password,
-                        scope: "openid"
-                    };
-                    return [4 /*yield*/, _1.auth0BaseClient.post('/oauth/token', body)
-                        // logger.debug(res.data)
-                    ];
-                case 1:
-                    res = _a.sent();
-                    // logger.debug(res.data)
-                    return [2 /*return*/, res.data];
-                case 2:
-                    e_1 = _a.sent();
-                    if (e_1.message == 'Request failed with status code 403') {
-                        throw new UserNotFoundError_1.UserNotFoundError();
-                    }
-                    loggers_1.errorLogger.error(e_1);
-                    loggers_1.logger.error(e_1);
-                    return [3 /*break*/, 3];
-                case 3: return [2 /*return*/];
-            }
-        });
+exports.getAssociatesInTrainersCurrentBatch = void 0;
+var get_batch_id_by_trainer_1 = require("../batch/get-batch-id-by-trainer");
+var get_current_batch_from_trainer_batches_1 = require("../batch/get-current-batch-from-trainer-batches");
+var get_associates_by_batch_id_1 = require("../associate/get-associates-by-batch-id");
+var CurrentBatchNotFoundError_1 = require("../../errors/CurrentBatchNotFoundError");
+exports.getAssociatesInTrainersCurrentBatch = function (email) { return __awaiter(void 0, void 0, void 0, function () {
+    var allBatches, currBatch, associates, e_1;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                _a.trys.push([0, 6, , 7]);
+                return [4 /*yield*/, get_batch_id_by_trainer_1.getBatchIdByTrainer(email)];
+            case 1:
+                allBatches = _a.sent();
+                return [4 /*yield*/, get_current_batch_from_trainer_batches_1.getCurrentBatchesFromTrainerBatches(allBatches)];
+            case 2:
+                currBatch = _a.sent();
+                associates = void 0;
+                if (!currBatch) return [3 /*break*/, 4];
+                return [4 /*yield*/, get_associates_by_batch_id_1.getAssociatesByBatchId(currBatch)];
+            case 3:
+                associates = _a.sent();
+                return [3 /*break*/, 5];
+            case 4: throw new Error('You Currently Have No Batches');
+            case 5: return [2 /*return*/, associates];
+            case 6:
+                e_1 = _a.sent();
+                if (e_1.message === 'You Currently Have No Batches') {
+                    throw new CurrentBatchNotFoundError_1.CurrentBatchNotFoundError;
+                }
+                console.log(e_1);
+                throw (e_1);
+            case 7: return [2 /*return*/];
+        }
     });
-}
-exports.auth0Login = auth0Login;
-//# sourceMappingURL=login.js.map
+}); };
+//# sourceMappingURL=get-associates-in-trainer-current-batch.js.map

@@ -38,8 +38,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.auth0UpdateRole = void 0;
 // import axios from 'axios';
-var loggers_1 = require("../../util/loggers");
+var loggers_1 = require("../../utils/loggers");
 var _1 = require(".");
+var get_user_role_1 = require("./get-user-role");
+var get_user_email_1 = require("./get-user-email");
 // import { auth0GetRole } from './get-user-role';
 // export class Auth0User{
 //     id!:string
@@ -47,12 +49,23 @@ var _1 = require(".");
 //     description!:string
 //     sources!:any[]
 // }
-function auth0UpdateRole(id, role) {
+function auth0UpdateRole(currentUserId, id, role) {
     return __awaiter(this, void 0, void 0, function () {
-        var associateRoleId, trainerRoleId, adminRoleId, roleId, body1, body2, result, bodyMetadata, error_1;
+        var currentUserRole, UserId, user, associateRoleId, trainerRoleId, adminRoleId, roleId, body1, body2, result, bodyMetadata, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0:
+                case 0: return [4 /*yield*/, get_user_role_1.auth0GetRole(currentUserId)]; //currentUser Id    
+                case 1:
+                    currentUserRole = _a.sent() //currentUser Id    
+                    ;
+                    return [4 /*yield*/, get_user_email_1.auth0GetUserByEmail(id)];
+                case 2:
+                    UserId = _a.sent();
+                    user = "auth0|" + UserId;
+                    if (!currentUserRole || currentUserRole.name != "Admin") {
+                        loggers_1.logger.error("Unauthorized");
+                        throw new Error('Unauthorized');
+                    }
                     associateRoleId = "rol_CYmNl4fBaIKxFT8Y";
                     trainerRoleId = "rol_N4hP8nXeE5QgxYHf";
                     adminRoleId = "rol_feLElhAtqbyRRgeq";
@@ -70,20 +83,20 @@ function auth0UpdateRole(id, role) {
                         default:
                             loggers_1.logger.error("No matching role found");
                     }
-                    _a.label = 1;
-                case 1:
-                    _a.trys.push([1, 5, , 6]);
+                    _a.label = 3;
+                case 3:
+                    _a.trys.push([3, 7, , 8]);
                     body1 = {
                         data: { "roles": [associateRoleId, trainerRoleId, adminRoleId] }
                     };
-                    return [4 /*yield*/, _1.auth0BaseClient.delete("/api/v2/users/" + id + "/roles", body1)];
-                case 2:
+                    return [4 /*yield*/, _1.auth0BaseClient.delete("/api/v2/users/" + user + "/roles", body1)];
+                case 4:
                     _a.sent(); //weired
                     body2 = {
                         "roles": [roleId]
                     };
-                    return [4 /*yield*/, _1.auth0BaseClient.post("/api/v2/users/" + id + "/roles", body2)];
-                case 3:
+                    return [4 /*yield*/, _1.auth0BaseClient.post("/api/v2/users/" + user + "/roles", body2)];
+                case 5:
                     result = _a.sent();
                     loggers_1.logger.debug(body2);
                     bodyMetadata = {
@@ -94,15 +107,15 @@ function auth0UpdateRole(id, role) {
                             }
                         }
                     };
-                    return [4 /*yield*/, _1.auth0BaseClient.patch("/api/v2/users/" + id, bodyMetadata)];
-                case 4:
+                    return [4 /*yield*/, _1.auth0BaseClient.patch("/api/v2/users/" + user, bodyMetadata)];
+                case 6:
                     _a.sent();
                     return [2 /*return*/, result];
-                case 5:
+                case 7:
                     error_1 = _a.sent();
                     loggers_1.logger.error(error_1);
                     throw new Error(error_1);
-                case 6: return [2 /*return*/];
+                case 8: return [2 /*return*/];
             }
         });
     });

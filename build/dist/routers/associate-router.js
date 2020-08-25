@@ -39,7 +39,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.batchRouter = exports.associateRouter = void 0;
+exports.associateRouter = void 0;
 var express_1 = __importDefault(require("express"));
 var get_all_associates_1 = require("../remote/associate/get-all-associates");
 var get_current_batches_1 = require("../remote/batch/get-current-batches");
@@ -48,21 +48,38 @@ var get_associate_filter_year_1 = require("../remote/associateFilter/get-associa
 var get_associate_by_trainer_1 = require("../remote/associate/get-associate-by-trainer");
 var get_skills_list_1 = require("../remote/batch/get-skills-list");
 var get_associate_filter_quarter_1 = require("../remote/associateFilter/get-associate-filter-quarter");
+var get_associate_by_email_1 = require("../remote/associate/get-associate-by-email");
+var get_batch_by_associate_email_1 = require("../remote/batch/get-batch-by-associate-email");
+var get_associates_in_trainer_current_batch_1 = require("../remote/associateFilter/get-associates-in-trainer-current-batch");
+var get_associates_by_batch_id_1 = require("../remote/associate/get-associates-by-batch-id");
 exports.associateRouter = express_1.default.Router();
-exports.batchRouter = express_1.default.Router();
 // auth middleware goes here
 // associatesRouter.use(authenticationMiddleware);
-// associateRouter.get('/batches/:batchId', async (req:Request, res:Response, next:NextFunction) => {
-//     let {batchId} = req.params;
-//     try{
-//         let user = await getAssociatesByBatchId(batchId)
-//         res.json(user)
-//     } catch (e){
-//         next(e)
-//     }
-// })
+//get associates in a batch, given their batch ID
+exports.associateRouter.get('/batches/:batchId', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+    var batchId, assocInBatch, e_1;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                batchId = req.params.batchId;
+                _a.label = 1;
+            case 1:
+                _a.trys.push([1, 3, , 4]);
+                return [4 /*yield*/, get_associates_by_batch_id_1.getAssociatesByBatchId(batchId)];
+            case 2:
+                assocInBatch = _a.sent();
+                res.json(assocInBatch);
+                return [3 /*break*/, 4];
+            case 3:
+                e_1 = _a.sent();
+                next(e_1);
+                return [3 /*break*/, 4];
+            case 4: return [2 /*return*/];
+        }
+    });
+}); });
 exports.associateRouter.get('/', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
-    var user, e_1;
+    var user, e_2;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -75,15 +92,37 @@ exports.associateRouter.get('/', function (req, res, next) { return __awaiter(vo
                 console.log(user[0].email);
                 return [3 /*break*/, 3];
             case 2:
-                e_1 = _a.sent();
-                next(e_1);
+                e_2 = _a.sent();
+                next(e_2);
                 return [3 /*break*/, 3];
             case 3: return [2 /*return*/];
         }
     });
 }); });
+exports.associateRouter.get('/:email', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+    var email, user, e_3;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                email = req.params.email;
+                _a.label = 1;
+            case 1:
+                _a.trys.push([1, 3, , 4]);
+                return [4 /*yield*/, get_associate_by_email_1.getAssociatesByEmail(email)];
+            case 2:
+                user = _a.sent();
+                res.json(user);
+                return [3 /*break*/, 4];
+            case 3:
+                e_3 = _a.sent();
+                next(e_3);
+                return [3 /*break*/, 4];
+            case 4: return [2 /*return*/];
+        }
+    });
+}); });
 exports.associateRouter.get('/currentBatches', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
-    var batch, e_2;
+    var batch, e_4;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -97,16 +136,16 @@ exports.associateRouter.get('/currentBatches', function (req, res, next) { retur
                 res.json(batch);
                 return [3 /*break*/, 4];
             case 3:
-                e_2 = _a.sent();
-                console.log(e_2);
-                next(e_2);
+                e_4 = _a.sent();
+                console.log(e_4);
+                next(e_4);
                 return [3 /*break*/, 4];
             case 4: return [2 /*return*/];
         }
     });
 }); });
 exports.associateRouter.get('/skill/:skillname', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
-    var skillName, assocBySkill, e_3;
+    var skillName, assocBySkill, e_5;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -120,16 +159,16 @@ exports.associateRouter.get('/skill/:skillname', function (req, res, next) { ret
                 res.json(assocBySkill);
                 return [3 /*break*/, 4];
             case 3:
-                e_3 = _a.sent();
-                console.log(e_3);
-                next(e_3);
+                e_5 = _a.sent();
+                console.log(e_5);
+                next(e_5);
                 return [3 /*break*/, 4];
             case 4: return [2 /*return*/];
         }
     });
 }); });
 exports.associateRouter.get('/year/:yearValue', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
-    var year, assocByYear, e_4;
+    var year, assocByYear, e_6;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -144,16 +183,16 @@ exports.associateRouter.get('/year/:yearValue', function (req, res, next) { retu
                 res.json(assocByYear);
                 return [3 /*break*/, 4];
             case 3:
-                e_4 = _a.sent();
-                console.log(e_4);
-                next(e_4);
+                e_6 = _a.sent();
+                console.log(e_6);
+                next(e_6);
                 return [3 /*break*/, 4];
             case 4: return [2 /*return*/];
         }
     });
 }); });
 exports.associateRouter.get('/quarter/:quarterValue', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
-    var quarter, assocByYear, e_5;
+    var quarter, assocByYear, e_7;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -168,9 +207,9 @@ exports.associateRouter.get('/quarter/:quarterValue', function (req, res, next) 
                 res.json(assocByYear);
                 return [3 /*break*/, 4];
             case 3:
-                e_5 = _a.sent();
-                console.log(e_5);
-                next(e_5);
+                e_7 = _a.sent();
+                console.log(e_7);
+                next(e_7);
                 return [3 /*break*/, 4];
             case 4: return [2 /*return*/];
         }
@@ -182,7 +221,7 @@ exports.associateRouter.get('/quarter/:quarterValue', function (req, res, next) 
 //the preferences of my Associates. 
 // get associates by batch id
 exports.associateRouter.get('/trainer/:trainerEmail', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
-    var trainerEmail, batches, e_6;
+    var trainerEmail, batches, e_8;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -196,8 +235,8 @@ exports.associateRouter.get('/trainer/:trainerEmail', function (req, res, next) 
                 res.json(batches);
                 return [3 /*break*/, 4];
             case 3:
-                e_6 = _a.sent();
-                next(e_6);
+                e_8 = _a.sent();
+                next(e_8);
                 return [3 /*break*/, 4];
             case 4: return [2 /*return*/];
         }
@@ -205,7 +244,7 @@ exports.associateRouter.get('/trainer/:trainerEmail', function (req, res, next) 
 }); });
 //gets the list of skills being taught by currently active batches
 exports.associateRouter.get('/batch/skills', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
-    var user, e_7;
+    var user, e_9;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -216,10 +255,54 @@ exports.associateRouter.get('/batch/skills', function (req, res, next) { return 
                 res.json(user);
                 return [3 /*break*/, 3];
             case 2:
-                e_7 = _a.sent();
-                next(e_7);
+                e_9 = _a.sent();
+                next(e_9);
                 return [3 /*break*/, 3];
             case 3: return [2 /*return*/];
+        }
+    });
+}); });
+exports.associateRouter.get('/batch/:associateEmail', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+    var associateEmail, batches, e_10;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                associateEmail = req.params.associateEmail;
+                _a.label = 1;
+            case 1:
+                _a.trys.push([1, 3, , 4]);
+                return [4 /*yield*/, get_batch_by_associate_email_1.getBatchByAssociatesEmail(associateEmail)];
+            case 2:
+                batches = _a.sent();
+                res.json(batches);
+                return [3 /*break*/, 4];
+            case 3:
+                e_10 = _a.sent();
+                next(e_10);
+                return [3 /*break*/, 4];
+            case 4: return [2 /*return*/];
+        }
+    });
+}); });
+exports.associateRouter.get('/batch/current/:trainerEmail', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+    var trainerEmail, associates, e_11;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                trainerEmail = req.params.trainerEmail;
+                _a.label = 1;
+            case 1:
+                _a.trys.push([1, 3, , 4]);
+                return [4 /*yield*/, get_associates_in_trainer_current_batch_1.getAssociatesInTrainersCurrentBatch(trainerEmail)];
+            case 2:
+                associates = _a.sent();
+                res.json(associates);
+                return [3 /*break*/, 4];
+            case 3:
+                e_11 = _a.sent();
+                next(e_11);
+                return [3 /*break*/, 4];
+            case 4: return [2 /*return*/];
         }
     });
 }); });

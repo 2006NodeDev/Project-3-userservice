@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+    "compilerOptions": {
     "types": ["node","jest"],
     "outDir": "build/dist",
     "module": "commonjs",
