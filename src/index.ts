@@ -11,10 +11,12 @@ import * as swaggerDocument from './swagger.json';
 import { corsFilter } from './middleware/cors-filter';
 
 const app = express()
-const jwtAuthz = require('express-jwt-authz');
+
 app.use(express.json())
 app.use(corsFilter)
 
+
+const jwtAuthz = require('express-jwt-authz');
 // const basePath = process.env['AC_BASE_PATH'] || ''
 
 //For a route that needs authentication: include 'checkJwt' in the path
@@ -37,6 +39,31 @@ app.post('/login', async (req:Request, res:Response, next:NextFunction) => {
         }
     }
 })
+app.post('/register' , async (req:Request, res: Response, next: NextFunction) => {
+    let {email, password, user_metadata:{preferredName, lastName}} = req.body  
+    if(!email || !password ){
+        throw new Error('Please fill out all necessary fields')
+    }else {
+        let newUser: User ={
+            email,
+            password,
+            user_metadata:{preferredName, lastName},
+        } 
+        newUser.user_metadata.preferredName = newUser.user_metadata.preferredName
+        newUser.user_metadata.lastName = newUser.user_metadata.lastName
+        if(!email.includes("@mock.com")){
+            throw new Error('Not valid email address')
+        }
+        try {
+            // newUser, password  inside paranthesis
+            let register = await auth0CreateNewUser(newUser) 
+            res.json(register)
+        } catch (error) {
+            logger.error(error)
+        }
+    }
+})
+app.use(checkJwt)
 
 app.patch('/updatePassword', (req:Request, res:Response, next:NextFunction) => {
     let { userId, password } = req.body;
@@ -55,30 +82,6 @@ app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
         res.json(update);
     } catch (error) {
         logger.error(error);
-    }
-})
-
-app.post('/register' , async (req:Request, res: Response, next: NextFunction) => {
-    let {email, password, user_metadata:{preferredName, lastName}} = req.body  
-    if(!email || !password ){
-        throw new Error('Please fill out all necessary fields')
-    }else {
-    
-        let newUser: User ={
-            email,
-            password,
-            user_metadata:{preferredName, lastName},
-        } 
-        newUser.user_metadata.preferredName = newUser.user_metadata.preferredName
-        newUser.user_metadata.lastName = newUser.user_metadata.lastName
-
-        try {
-            // newUser, password  inside paranthesis
-            let register = await auth0CreateNewUser(newUser) 
-            res.json(register)
-        } catch (error) {
-            logger.error(error)
-        }
     }
 })
 

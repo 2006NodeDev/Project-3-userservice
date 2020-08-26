@@ -1,8 +1,6 @@
 import { auth0BaseClient } from "."
 import { logger, errorLogger } from "../../util/loggers"
 
-
-
 export class User {
     email:string; 
     password:string;
@@ -14,7 +12,6 @@ export class User {
         this.user_metadata.lastName = user_metadata.lastName
     }
 }
-
 
 export async function auth0CreateNewUser(newUser:User){
     try {
@@ -34,7 +31,6 @@ export async function auth0CreateNewUser(newUser:User){
             verify_email: true, 
          
         }
-        
         let res = await auth0BaseClient.post('/api/v2/users', body)
         await auth0BaseClient.post(`/api/v2/users/${res.data.user_id}/roles`, {
             roles : [
