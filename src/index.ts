@@ -34,7 +34,7 @@ app.use(express.json())
 
 app.use(corsFilter)
 
-const basePath = process.env['AC_BASE_PATH'] || '/user-service'
+const basePath = process.env['BASE_PATH'] || ''
 const basePathRouter = express.Router();
 app.use(basePath, basePathRouter);
 // basePathRouter.use(checkJwt);
