@@ -46,12 +46,6 @@ app.get('/health', (req: Request, res: Response) => {
     res.sendStatus(200)
 })
 
-// const basePath = process.env['AC_BASE_PATH'] || ''
-
-//For a route that needs authentication: include 'checkJwt' in the path
-//For a route that needs permissions(scopes): include 'checkJwt, jwtAuthz([ 'read:messages' ])' to the path, similar to the roles array we used before
-
-
 basePathRouter.post('/login',  async (req:Request, res:Response, next:NextFunction) => {
     let { username } = req.body
     let { password } = req.body
@@ -76,40 +70,7 @@ basePathRouter.post('/login',  async (req:Request, res:Response, next:NextFuncti
     }
 })
 
-
-app.get('/getRole/:id', async (req:Request, res:Response, next:NextFunction) =>{
-    try {
-        let { id } = req.params
-        let result = await auth0GetRole(id)
-        let role = roleConverter(result)
-        res.json(role)
-    } catch (error) {
-        logger.error(error)
-    }
-})
-
-app.patch('/updatePassword', (req:Request, res:Response, next:NextFunction) => {
-    let { userId, password } = req.body;
-    try {
-        let update = auth0UpdatePassword(userId, password);
-        res.json(update);
-    } catch (error) {
-        logger.error('unable to update password')
-        logger.error(error);
-    }
-})
-
-app.patch('/updateRole', (req:Request, res:Response, next:NextFunction) => {
-    let { currentUserId, email, role } = req.body;
-    try {
-        let update = auth0UpdateRole(currentUserId, email, role);
-        res.json(update);
-    } catch (error) {
-        logger.error(error);
-    }
-})
-
-app.post('/register' , async (req:Request, res: Response, next: NextFunction) => {
+basePathRouter.post('/register' , async (req:Request, res: Response, next: NextFunction) => {
     let {email, password, user_metadata:{preferredName, lastName}} = req.body
     try {
         let verifyEmail = await getEmails(email);
@@ -194,10 +155,6 @@ app.use((err, req, res, next) => {
 
     }
 })
-
-// app.get('/health', (req:Request, res:Response)=>{
-//     res.sendStatus(200);
-// })
 
 app.listen(2006, () =>{
     auth0GetUserServiceToken()
