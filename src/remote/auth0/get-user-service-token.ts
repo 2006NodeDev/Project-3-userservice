@@ -1,5 +1,5 @@
 import { auth0BaseClient, updateUserServiceJWT } from ".";
-import { logger, errorLogger } from "../../util/loggers";
+import { logger, errorLogger } from "../../utils/loggers";
 require('dotenv').config()
 /*
  * This function gets the Auth0 User Service Token.
