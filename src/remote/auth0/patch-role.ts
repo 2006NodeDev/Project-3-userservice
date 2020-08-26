@@ -1,6 +1,8 @@
 // import axios from 'axios';
-import { logger } from "../../util/loggers";
+import { logger } from "../../utils/loggers";
 import { auth0BaseClient } from '.';
+import { auth0GetRole } from './get-user-role';
+import { auth0GetUserByEmail } from './get-user-email';
 // import { auth0GetRole } from './get-user-role';
 
 // export class Auth0User{
@@ -12,13 +14,16 @@ import { auth0BaseClient } from '.';
 
 
 
-export async function auth0UpdateRole(id:number, role:string){
+export async function auth0UpdateRole(currentUserId:string, id:string, role:string){
     //delete previous role and update to new role
-    //const currentUserRole = await auth0GetRole(12345)       //currentUser Id
-    // if(currentUserRole!="Admin"){
-    //     throw new Error('Unauthorized')
-    // }
+    const currentUserRole = await auth0GetRole(currentUserId)       //currentUser Id    
+    const UserId = await auth0GetUserByEmail(id)
+    const user = "auth0|" + UserId
 
+    if(!currentUserRole || currentUserRole.name!="Admin"){
+        logger.error(`Unauthorized`);
+        throw new Error('Unauthorized')
+    }
     const associateRoleId = "rol_CYmNl4fBaIKxFT8Y"
     const trainerRoleId = "rol_N4hP8nXeE5QgxYHf"
     const adminRoleId = "rol_feLElhAtqbyRRgeq"
@@ -40,12 +45,12 @@ export async function auth0UpdateRole(id:number, role:string){
         const body1={
             data: {"roles": [associateRoleId, trainerRoleId, adminRoleId]}
         }
-        await auth0BaseClient.delete(`/api/v2/users/${id}/roles`, body1);    //weired
+        await auth0BaseClient.delete(`/api/v2/users/${user}/roles`, body1);    //weired
 
         let body2 = {
             "roles": [roleId]
         };
-        let result = await auth0BaseClient.post(`/api/v2/users/${id}/roles`, body2);
+        let result = await auth0BaseClient.post(`/api/v2/users/${user}/roles`, body2);
         logger.debug(body2);
 
         let bodyMetadata = {
@@ -56,7 +61,7 @@ export async function auth0UpdateRole(id:number, role:string){
                 }
               }
         }
-        await auth0BaseClient.patch(`/api/v2/users/${id}`, bodyMetadata);
+        await auth0BaseClient.patch(`/api/v2/users/${user}`, bodyMetadata);
 
         return result
         
