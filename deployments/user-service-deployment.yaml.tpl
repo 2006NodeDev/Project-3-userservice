@@ -26,6 +26,8 @@ spec:
         env:
         - name: AUTH0_CLIENT_ID
           value: "Die6w2itO0GPZd5EDJy8sVCeeoNMVV7U"
+        - name: BASE_PATH
+          value: "/user-service"          
         - name: AUTH0_CLIENT_SECRET 
           valueFrom:
             secretKeyRef:
